@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1553630778 source:c:\users\elian\desktop\prog\codeblo\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1554065605 source:c:\users\elian\desktop\c proyectos\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"increible.h"
+
+1553920821 c:\users\elian\desktop\c proyectos\calculadora\increible.h
+
+1553922647 source:c:\users\elian\desktop\c proyectos\calculadora\increible.c
+	<stdio.h>
+	<stdlib.h>
+	"conio.h"
+	"increible.h"
+
