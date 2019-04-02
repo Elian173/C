@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1554222792 source:c:\users\elian\desktop\c proyectos\calculadorafinal\main.c
+	<stdio.h>
+	<stdlib.h>
+	"CalcFunciones.h"
+
+1554222653 source:c:\users\elian\desktop\c proyectos\calculadorafinal\calcfunciones.c
+	<stdio.h>
+	<stdlib.h>
+	"CalcFunciones.h"
+
+1554222653 c:\users\elian\desktop\c proyectos\calculadorafinal\calcfunciones.h
+
+1554222653 source:c:\users\elian\desktop\c proyectos\calculadora opc1\calcfunciones.c
+	<stdio.h>
+	<stdlib.h>
+	"CalcFunciones.h"
+
+1554222653 c:\users\elian\desktop\c proyectos\calculadora opc1\calcfunciones.h
+
+1554225081 source:c:\users\elian\desktop\c proyectos\calculadora opc1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"CalcFunciones.h"
+
