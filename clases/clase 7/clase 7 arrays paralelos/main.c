@@ -12,6 +12,11 @@ char nombre[ELEMENTOS][50] = {"Pedro","Carlos","Juan","Ernesto","Mario"};
 char apellido[ELEMENTOS][50]= {"Gomez","Fernandez","Paz","Perez","Lopez"};
 char auxiliar[50];
 
+
+printf("\n supuestamente una E : %c " , apellido[1][1]);
+
+
+
 strlwr(nombre);
 strlwr(apellido);
 
@@ -38,5 +43,8 @@ for(i=0;i<ELEMENTOS;i++)
 {
 printf("\nApellido: %s - Nombre: %s",apellido[i],nombre[i]);
 }
+
+
+
 return 0;
 };
