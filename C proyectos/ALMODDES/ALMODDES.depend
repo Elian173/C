@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1555359260 source:f:\c\c proyectos\funcioneselian\funcioneselian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"FuncionesElian.h"
+
+1555357972 f:\c\c proyectos\funcioneselian\funcioneselian.h
+
+1555358918 source:f:\c\c proyectos\almoddes\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	"../FuncionesElian/FuncionesElian.h"
+
+1555455858 source:e:\c\c proyectos\funcioneselian\funcioneselian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"FuncionesElian.h"
+
+1555455860 e:\c\c proyectos\funcioneselian\funcioneselian.h
+
+1555370684 source:e:\c\c proyectos\almoddes\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<ctype.h>
+	"../FuncionesElian/FuncionesElian.h"
+

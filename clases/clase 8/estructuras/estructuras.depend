@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1555371182 source:e:\c\clases\clase 8\estructuras\main.c
+	<stdio.h>
+	"estructuras.h"
+
+1555371060 source:e:\c\clases\clase 8\estructuras\estructuras.c
+	<stdio.h>
+	<stdlib.h>
+	"estructuras.h"
+
+1555374914 e:\c\clases\clase 8\estructuras\estructuras.h
+	<stdio.h>
+	<stdlib.h>
+
