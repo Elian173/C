@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1556568783 source:c:\users\elian\desktop\misfunciones\funcionesinput\funcionesinput.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
+1556568799 source:c:\users\elian\desktop\misfunciones\funcionesinput\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"FuncionesInput.h"
+
+1556568783 c:\users\elian\desktop\misfunciones\funcionesinput\funcionesinput.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
