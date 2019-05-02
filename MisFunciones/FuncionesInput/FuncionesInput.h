@@ -18,7 +18,7 @@ void f_i_PedirString(char var_dondeAsignar[], int longitudMaxString , char mensa
 
 /*Funciones para obtener datos especificos*/
 
-void f_i_PedirNombre(char * nombre[], char msj[]);
+void f_i_PedirNombre(char var_dondeAsignar[],int longitudMaxString , char mensaje[]);
 
 void f_i_PedirStringSoloNumeros(char var_dondeAsignar[],int longitudMaxString ,char mensaje[]);
 
@@ -28,7 +28,7 @@ void f_i_PedirStringAlfaNumerico(char var_dondeAsignar[],int longitudMaxString ,
 
 void f_i_PedirSexo(char * var_dondeAsignar , char mensaje[]);
 
-void f_i_PedirEdad (int *var_dondeAsignar ,char mensaje[]);
+void f_i_PedirEdad (int * var_dondeAsignar ,char mensaje[]);
 
 /*Funciones para menus*/
 
@@ -40,7 +40,11 @@ void f_o_IniciarArrayInt (int var_dondeAsignar[],int asignarleEsteNumero,int can
 
 void f_o_IniciarArrayIntIncremental(int var_dondeAsignar[],int cantidadElementos);
 
-void f_o_OrdenarArrayAlfabeticamente(int cantidadElementos,int longitudMaxString,char var_dondeAsignar[longitudMaxString][cantidadElementos]);
+void f_o_OrdenarArrayAlfabeticamente(int cantidadElementos,int longitudMaxString,
+                       char var_dondeAsignar[cantidadElementos][longitudMaxString]);
+
+void f_o_ArreglarCaps (int cantidadElementos,int longitudMaxString,
+                       char var_dondeAsignar[cantidadElementos][longitudMaxString]);
 
 void f_o_OrdernarArrayMayorAMenor (int var_dondeAsignar[],int cantidadElementos);
 

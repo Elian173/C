@@ -3,6 +3,7 @@
 #include <conio.h>
 #include <string.h>
 #include <ctype.h>
+#include "FuncionesInput.h"
 
 /*Funciones para obtener valores*/
 
@@ -279,29 +280,6 @@ void f_o_IniciarArrayIntIncremental(int var_dondeAsignar[],int cantidadElementos
 return;
 };
 
-void f_o_OrdenarArrayAlfabeticamente(int cantidadElementos,int longitudMaxString,char var_dondeAsignar[longitudMaxString][cantidadElementos]){
-/*NO FUNCIONA PERO SE PUEDE COPIAR EL CODIGO*/
-
-char auxiliar[longitudMaxString];
-
-int i,j;
-
-for(i=0; i<cantidadElementos-1; i++)
-{
-for(j=i+1; j<cantidadElementos; j++)
-{
-
-if(strcmp(var_dondeAsignar[i],var_dondeAsignar[j])>0)
-{
-strcpy(auxiliar, var_dondeAsignar[i]);
-strcpy(var_dondeAsignar[i], var_dondeAsignar[j]);
-strcpy(var_dondeAsignar[j], auxiliar);
-}
-}
-}
-
-};
-
 void f_o_OrdernarArrayMayorAMenor (int var_dondeAsignar[],int cantidadElementos){
 
     int i , j , aux;
@@ -316,20 +294,56 @@ void f_o_OrdernarArrayMayorAMenor (int var_dondeAsignar[],int cantidadElementos)
     };
 };
 };
+return;
 };
 
 void f_o_OrdernarArrayMenorAMayor (int var_dondeAsignar[],int cantidadElementos){
-
     int i , j , aux;
+
     for(i=0; i<cantidadElementos-1; i++)
     {
     for(j=0; j<cantidadElementos-1; j++)
     {
-    if(var_dondeAsignar[j] < var_dondeAsignar[j+1]){
+    if(var_dondeAsignar[j] > var_dondeAsignar[j+1]){
         aux = var_dondeAsignar[j+1];
         var_dondeAsignar[j+1] = var_dondeAsignar[j];
         var_dondeAsignar[j] = aux;
     };
 };
 };
+return;
+};
+
+void f_o_OrdenarArrayAlfabeticamente(int cantidadElementos,int longitudMaxString,
+                       char var_dondeAsignar[cantidadElementos][longitudMaxString]){
+
+    char auxiliar[longitudMaxString];
+
+    int i,j;
+
+    for(i=0; i<cantidadElementos-1; i++)
+    {
+    for(j=0; j<cantidadElementos-i-1; j++)
+    {
+    if(strcmp( var_dondeAsignar[j],var_dondeAsignar[j+1])>0){
+        strcpy(auxiliar,var_dondeAsignar[j]);
+        strcpy(var_dondeAsignar[j] , var_dondeAsignar[j+1]);
+        strcpy(var_dondeAsignar[j+1] , auxiliar);
+    };
+};
+};
+
+strcpy(var_dondeAsignar[0],"LOL");
+
+return;
+};
+
+void f_o_ArreglarCaps (int cantidadElementos,int longitudMaxString,
+                       char var_dondeAsignar[cantidadElementos][longitudMaxString]){
+    int i=0;
+    for (i=0;i<cantidadElementos;i++){
+    strlwr(var_dondeAsignar[i]);
+    var_dondeAsignar[i][0]= toupper(var_dondeAsignar[i][0]);
+};
+return;
 };

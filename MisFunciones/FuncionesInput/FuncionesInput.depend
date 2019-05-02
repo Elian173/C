@@ -21,3 +21,49 @@
 	<string.h>
 	<ctype.h>
 
+1556585354 source:e:\c\misfunciones\funcionesinput\funcionesinput.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"FuncionesInput.h"
+
+1556585170 source:e:\c\misfunciones\funcionesinput\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"FuncionesInput.h"
+
+1556585336 e:\c\misfunciones\funcionesinput\funcionesinput.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
+1556592564 source:f:\c\misfunciones\funcionesinput\funcionesinput.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"FuncionesInput.h"
+
+1556818634 f:\c\misfunciones\funcionesinput\funcionesinput.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
+1556818634 source:f:\c\misfunciones\funcionesinput\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"FuncionesInput.h"
+
