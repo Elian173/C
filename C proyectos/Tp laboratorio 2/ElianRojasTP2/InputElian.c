@@ -3,7 +3,7 @@
 #include <conio.h>
 #include <string.h>
 #include <ctype.h>
-#include "FuncionesInput.h"
+#include "InputElian.h"
 
 //#define __unix__
 #ifdef __unix__

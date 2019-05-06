@@ -1,9 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <conio.h>
-#include <string.h>
-#include <ctype.h>
-
 /*Funciones para obtener valores*/
 
 void f_i_PedirInt (int * var_dondeAsignar , char mensaje[]);
@@ -52,14 +46,13 @@ void f_o_IniciarArrayIntIncremental(int var_dondeAsignar[],int cantidadElementos
 
 int f_o_BuscarIndicePrimerOcurrencia (int var_dondeAsignar[],int cantidadElementos,int indicadorPrimerOcurrencia);
 
-void f_o_OrdernarArrayMayorAMenor (int var_dondeAsignar[],int cantidadElementos);
-
-void f_o_OrdernarArrayMenorAMayor (int var_dondeAsignar[],int cantidadElementos);
-
 void f_o_OrdenarArrayAlfabeticamente(int cantidadElementos,int longitudMaxString,
                        char var_dondeAsignar[cantidadElementos][longitudMaxString]);
 
 void f_o_ArreglarCaps (int cantidadElementos,int longitudMaxString,
                        char var_dondeAsignar[cantidadElementos][longitudMaxString]);
 
+void f_o_OrdernarArrayMayorAMenor (int var_dondeAsignar[],int cantidadElementos);
+
+void f_o_OrdernarArrayMenorAMayor (int var_dondeAsignar[],int cantidadElementos);
 

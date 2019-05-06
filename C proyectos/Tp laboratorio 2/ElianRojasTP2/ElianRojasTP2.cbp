@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="structABM" />
+		<Option title="ElianRojasTP2" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/structABM" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/ElianRojasTP2" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/structABM" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/ElianRojasTP2" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -31,17 +31,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="fInput.c">
+		<Unit filename="ArrayEmployees.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="fInput.h" />
+		<Unit filename="ArrayEmployees.h" />
+		<Unit filename="InputElian.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="InputElian.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="structABM.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="structABM.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

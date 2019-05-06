@@ -44,22 +44,24 @@
 	<string.h>
 	<ctype.h>
 
-1556592564 source:f:\c\misfunciones\funcionesinput\funcionesinput.c
+1557079318 source:f:\c\misfunciones\funcionesinput\funcionesinput.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
 	<string.h>
 	<ctype.h>
 	"FuncionesInput.h"
+	<unistd.h>
+	<windows.h>
 
-1556818634 f:\c\misfunciones\funcionesinput\funcionesinput.h
+1557022024 f:\c\misfunciones\funcionesinput\funcionesinput.h
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
 	<string.h>
 	<ctype.h>
 
-1556818634 source:f:\c\misfunciones\funcionesinput\main.c
+1557079320 source:f:\c\misfunciones\funcionesinput\main.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>

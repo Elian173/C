@@ -5,24 +5,23 @@
 /*empleado?*/
 
 typedef struct{
-    int str_UNO_ID;
-    char str_UNO_STRING_A[20];
-    char str_UNO_STRING_B[20];
-    char str_UNO_CHAR;
-    float str_UNO_FLOAT;
-    int str_UNO_CONECTOR_ID_str_DOS;
-    int str_UNO_isEmpty;
-
-}str_UNO;
+    int id;
+    char STRING_UNO_A[20];
+    char STRING_UNO_B[20];
+    char CHAR_UNO_A;
+    float FLOAT_UNO_A;
+    int TIPO_ESTRUCTURA_UNO_CONECTOR_ID_TIPO_ESTRUCTURA_DOS;
+    int isEmpty;
+}TIPO_ESTRUCTURA_UNO;
 
 /*sector*/
 
 typedef struct
 {
-    int str_DOS_ID;
-    char str_DOS_STRING_A[20];
+    int id;
+    char STRING_DOS_A[20];
 
-} str_DOS;
+}TIPO_ESTRUCTURA_DOS;
 
 /*Fecha*/
 
@@ -32,27 +31,27 @@ typedef struct
     int mes;
     int anyo;
 
-} str_Fecha;
+}str_Fecha;
 
 /*otro sector*/
 
 typedef struct
 {
-    int str_TRES_ID;
-    char str_TRES_STRING_A[20];
+    int id;
+    char STRING_TRES_A[20];
 
-} str_TRES;
+}TIPO_ESTRUCTURA_TRES;
 
 /*almuerzo*/
 
 typedef struct
 {
-    int str_CUATRO_ID;
+    int id;
 
-    int str_CUATRO_CONECTOR_ID_str_TRES;
-    int str_CUATRO_CONECTOR_ID_str_UNO;
+    int TIPO_ESTRUCTURA_CUATRO_CONECTOR_ID_TIPO_ESTRUCTURA_TRES;
+    int TIPO_ESTRUCTURA_CUATRO_CONECTOR_ID_TIPO_ESTRUCTURA_UNO;
     str_Fecha str_CUATRO_fecha;
 
-    int str_CUATRO_isEmpty;
+    int isEmpty;
 
-} str_CUATRO;
+}TIPO_ESTRUCTURA_CUATRO;

@@ -9,3 +9,30 @@
 	<stdlib.h>
 	<string.h>
 
+1556824506 source:f:\c\misfunciones\funcionesabm\funcionesabm.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1556824506 source:f:\c\misfunciones\funcionesabm\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1557022062 source:f:\c\misfunciones\funcionesinput\funcionesinput.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"FuncionesInput.h"
+	<unistd.h>
+	<windows.h>
+
+1557022024 f:\c\misfunciones\funcionesinput\funcionesinput.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
