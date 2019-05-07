@@ -66,6 +66,7 @@ int main()
                 if ( !(isAllEmpty(employees,ELEMENTS)) ){
 
                 f_i_PedirIntEntre(&auxId , 1  , ELEMENTS , "\nIngrese el ID del empleado a modificar:\n");
+
                 auxId = findEmployeeById(employees,ELEMENTS,auxId);
 
                 if (auxId != -1){

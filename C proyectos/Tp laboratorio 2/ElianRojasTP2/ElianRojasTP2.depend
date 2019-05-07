@@ -31,3 +31,35 @@
 	"ArrayEmployees.h"
 	"InputElian.h"
 
+1557120938 source:e:\c\c proyectos\tp laboratorio 2\elianrojastp2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+	"InputElian.h"
+
+1557119242 e:\c\c proyectos\tp laboratorio 2\elianrojastp2\arrayemployees.h
+
+1557081792 e:\c\c proyectos\tp laboratorio 2\elianrojastp2\inputelian.h
+
+1557122814 source:e:\c\c proyectos\tp laboratorio 2\elianrojastp2\inputelian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"InputElian.h"
+	<unistd.h>
+	<windows.h>
+
+1557120902 source:e:\c\c proyectos\tp laboratorio 2\elianrojastp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+	"InputElian.h"
+
