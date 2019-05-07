@@ -229,7 +229,9 @@ indicate UP or DOWN order
 *
 */
 int sortEmployeesBySector(Employee * list, int len){
+
     Employee aux;
+
     int i,j;
     for(i=0; i<len-1; i++)
     {
@@ -260,7 +262,7 @@ int sortEmployeesBySector(Employee * list, int len){
 * \param id int
 * \return void
 **/
-void modifyEmployee (Employee list[],int len,int id){
+void modifyEmployee (Employee list [],int len,int id){
 
     int auxSector,option;
     char auxName[25];

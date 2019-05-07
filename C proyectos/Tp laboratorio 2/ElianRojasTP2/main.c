@@ -31,7 +31,7 @@ int main()
 
     /////////////////////////
 
-    //hardCode(employees);
+    hardCode(employees);
 
     //MENU//
 

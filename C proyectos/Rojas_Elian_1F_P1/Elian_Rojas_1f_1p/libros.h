@@ -18,6 +18,15 @@ typedef struct{
 }ESTRUCTURA_Libros;
 
 typedef struct{
+    int id; //incremental
+    int idLibro;
+    int idSocio; // debe existir
+    str_Fecha fechaPrestamo;
+    int isEmpty;
+
+}ESTRUCTURA_Prestamos;
+
+typedef struct{
     int id;
     char nombre[31];
     char apellido[31];
@@ -28,34 +37,30 @@ typedef struct{
     int isEmpty;
 }ESTRUCTURA_Socios;
 
-typedef struct{
-    int id; //incremental
-    char idLibro[20];
-    int idSocio; // debe existir
-    str_Fecha fechaPrestamo;
-    int isEmpty;
 
-}ESTRUCTURA_Prestamos;
-
-
+//HARDCODE//
 
 void hardCodeLibros(ESTRUCTURA_Libros lista[]);
 
 void hardCodeAutores(ESTRUCTURA_Autores lista[]);
 
+void hardCodeSocios (ESTRUCTURA_Socios lista[]);
 
 
-
+//FUNCIONES DE MOSTRAR//
 
 void mostrarAutores (ESTRUCTURA_Autores autor[] , int cantidadElementos) ;
 
-void mostrarLibros (ESTRUCTURA_Libros libro[] , int cantidadElementos) ;
+void mostrarLibros (ESTRUCTURA_Libros libro[] ,ESTRUCTURA_Autores autor[] , int cantidadElementos);
 
 void mostrarTodosSocios (ESTRUCTURA_Socios socio[] , int cantidadElementos);
 
 void mostrarUnSocio (ESTRUCTURA_Socios socio[] , int id) ;
 
+void mostrarPrestamos (ESTRUCTURA_Prestamos prestamos [] , int cantidadElementos, ESTRUCTURA_Socios socios[] , ESTRUCTURA_Libros libros[]) ;
 
+
+//FUNCIONES INICIALIZACION//
 
 void iniciarIncrementalSocios (ESTRUCTURA_Socios iniciando[],int cantidadElementos);
 
@@ -66,8 +71,7 @@ void iniciarVacioSocios(ESTRUCTURA_Socios iniciando[],int cantidadElementos,int 
 void iniciarVacioPrestamos(ESTRUCTURA_Prestamos iniciando[],int cantidadElementos,int numeroQueSeAsigna);
 
 
-
-
+//FUNCIONES BUSQUEDA//
 
 int buscarPrimerIdVacioSocios (ESTRUCTURA_Socios aBuscar[],int cantidadElementos,int indicadorPrimerOcurrencia);
 
@@ -79,13 +83,21 @@ int estaTodoVacioPrestamos(ESTRUCTURA_Prestamos list[] , int len);
 
 int buscarPorIdSocio(ESTRUCTURA_Socios socio[],int cantidadElementos,int id);
 
-int buscarPorIdprestamo(ESTRUCTURA_Prestamos prestamo[],int cantidadElementos,int id);
+int buscarPorIdprestamo(ESTRUCTURA_Prestamos prestamos[],int cantidadElementos,int id);
+
+int buscarIdLibro( ESTRUCTURA_Libros libros[] ,int cantidadElementos ,int id) ;
+
+int contarSocios( ESTRUCTURA_Socios lista [] , int cantMAXelementos);
 
 
-
+//CARGAS//
 
 void cargarSocio (ESTRUCTURA_Socios elSocio[] , int id);
 
-void f_i_modificarSocio (ESTRUCTURA_Socios elSocio[] , int id );
-
 void modificarSocio (ESTRUCTURA_Socios elSocio[] , int id );
+
+int cargarPrestamo ( ESTRUCTURA_Prestamos prestamos[] , int id , ESTRUCTURA_Libros libros [] ,int cantidadDeLibros, ESTRUCTURA_Socios socios[],int cantidadDeSocios,ESTRUCTURA_Autores autores[]);
+
+//ORDEN//
+
+void ordenarPorApellido(ESTRUCTURA_Socios socio[], int cantidadElementos);

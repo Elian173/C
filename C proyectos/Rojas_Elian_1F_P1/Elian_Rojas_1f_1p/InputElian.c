@@ -331,6 +331,7 @@ while ( !((r=='F')||(r=='M')) ){
         r = toupper(getche());
         };
     *var_dondeAsignar=r;
+    fflush(stdin);
 return;
 };
 
@@ -356,117 +357,146 @@ void f_i_PedirEdad (int * var_dondeAsignar ,char mensaje[]){
     return;
     }
 
-
-  /*pedir telefono*/
-
+/** \brief Solicita un texto al usuario , valida que sea de formato Teleforno,de 8 a (longitudMaxString) caracteres maximos,solo permite numeros
+ * elimina saltos de linea
+ * \param var_dondeAsignar es donde se guarda el valor
+ * \param longitudMaxString es la cantidad maxima de caracteres que puede ingresar el usuario
+ * \param mensaje Es el mensaje a ser mostrado
+ * \return void
+ */
 void f_i_PedirTelefono (char var_dondeAsignar[], int longitudMaxString , char mensaje[]){
 
     int i;
     int invalido;
     char auxiliar[longitudMaxString];
-    fflush(stdin);
-    printf("%s\n",mensaje);
+    int len;
 
     do {
-        fflush(stdin);
-        fgets(auxiliar,longitudMaxString,stdin);
 
-        for (i=0;i<strlen(auxiliar)-1;i++)
-        {
-            if (auxiliar[i]<'0' || auxiliar[i]>'9')
-            {
-                invalido = 1;
-                printf("\nError, ingrese solo numeros \n");
-                break;
-            }
-            else
-            {
-                invalido = 0;
-            }
+        invalido = 0;
+        fflush(stdin);
+        printf("%s\n",mensaje);
+        fgets(auxiliar,longitudMaxString,stdin);
+        len = (strlen(auxiliar)-1);
+
+        if ( ( len < 8 ) || (len > longitudMaxString) ){
+            invalido = 1;
         }
-    } while (invalido);
+        else {
+
+            for (i=0;i<strlen(auxiliar)-1;i++)
+            {
+                if (auxiliar[i]<'0' || auxiliar[i]>'9')
+                {
+                invalido = 1;
+                break;
+                };
+
+            };
+        };
+
+            if (invalido == 1){
+            printf("\n*Telefono Invalido*\n");
+
+            }
+
+        } while (invalido == 1);
+
     //elimino saltos de linea//
-    int len = strlen(auxiliar);
+
+    len = (strlen(auxiliar));
 
     if(auxiliar[len-1]=='\n'){
 
     auxiliar[len-1]='\0';
 
     };
+
     strcpy(var_dondeAsignar,auxiliar);
+
     return;
 };
 
-
-/** pedir email**/
-
+/** \brief Solicita un texto al usuario , valida que sea de formato e-mail, maximo UN punto y UN arroba ,permite numeros y "_"
+ * elimina saltos de linea
+ * \param var_dondeAsignar es donde se guarda el valor
+ * \param longitudMaxString es la cantidad maxima de caracteres que puede ingresar el usuario
+ * \param mensaje Es el mensaje a ser mostrado
+ * \return void
+ */
 void f_i_PedirEmail (char var_dondeAsignar [] , int longitudMaxString , char mensaje [] ){
 
-    int indexArroba = -1, i , indexPunto = -1 , mal=0;
+    int cantidadArrobas , cantidadPuntos , pusoArroba;
+    int i;
+    int invalido;
     char auxiliar[longitudMaxString];
-
-
     do {
-    mal=0;
-    printf("\n%s\n",mensaje);
-    fflush(stdin);
-    fgets(auxiliar,longitudMaxString,stdin);
 
-    if (strlen(auxiliar) <= longitudMaxString && strlen(auxiliar) > 0)
-    {
-        for (i=0; i<strlen(auxiliar)-1; i++)
-        {
-            if (auxiliar[i] == ' ')
-            {
-               printf("\n*Error*");
-               mal=1;
+        cantidadArrobas = 0, cantidadPuntos = 0 , invalido = 0 , pusoArroba = 0;
+        fflush(stdin);
+        printf("%s\n",mensaje);
+        fgets(auxiliar,longitudMaxString,stdin);
+        strlwr(auxiliar);
+
+        for (i=0 ; i<strlen(auxiliar)-1 ; i++){
+
+            if (auxiliar[i] == ' '){
+            invalido = 1;
+            break;
+            };
+
+            if (i==0 && (auxiliar[i] == '@' || auxiliar[i] == '.')){
+            invalido = 1;
+            break;
+            };
+
+            if ( ((auxiliar[i] < 'a' || auxiliar[i] > 'z') && (auxiliar[i]<'0' || auxiliar[i]>'9')) && (auxiliar[i] != '@') && (auxiliar[i] != '.') && (auxiliar[i] != '_') && (auxiliar[i] =! '-')  ){
+            invalido=1;
+            break;
+            };
+
+            if (auxiliar[i] == '@'){
+                if (cantidadArrobas >= 1){
+                invalido=1;
                 break;
-            }
-            if (i==0 && (auxiliar[i] == '@' || auxiliar[i] == '.'))
-            {
-                printf("\n*Error*");
-               mal=1;
-            }
-            if (auxiliar[i] == '@')
-            {
-                if (indexArroba == -1)
-                {
-                    indexArroba = i;
-                }
-                else
-                {
-               printf("\n*Error*");
-               mal=1;
-                }
-            }
-            if (auxiliar[i] == '.' && indexArroba != -1)
-            {
-                indexPunto = i;
-            }
-            if (indexArroba != -1 && indexPunto == -1 && auxiliar[i] != '@')
-            {
-                if (auxiliar[i] < 'a' || auxiliar[i] > 'z')
-                {
-               printf("\n*Error*");
-               mal=1;
-                }
-            }
-        }
-        if (indexArroba == -1 || indexPunto == -1)
-        {
-            printf("\n*Error*");
-            mal=1;
-        }
-        else
-        {
-            strcpy(var_dondeAsignar, auxiliar);
-            mal = 0;
-        }
-    }
-} while (mal == 1);
-return;
-}
+                };
+                pusoArroba = 1;
+                cantidadArrobas ++;
+            };
 
+            if (auxiliar[i] == '.'){
+
+                if (cantidadPuntos >= 1 || pusoArroba == 0){
+                    invalido = 1;
+                    break;
+                };
+                cantidadPuntos ++;
+            };
+
+        } // for
+
+        if(cantidadPuntos == 0 || pusoArroba == 0){
+        invalido = 1;
+        };
+
+    if ( invalido == 1 ){
+        printf("\n*Mail invalido*\n");
+    };
+
+    } while (invalido == 1);
+
+    //elimino saltos de linea//
+    int len = strlen(auxiliar);
+
+    if(auxiliar[len-1]=='\n'){
+
+    auxiliar[len-1]='\0';
+    };
+
+    strcpy(var_dondeAsignar, auxiliar);
+
+    return;
+}
 
 /** \brief Solicita al usuario y valida que solo se ingrese 'S' o 'N' , arregla mayusculas automaticamente
  * \param mensaje Es el mensaje a ser mostrado
@@ -488,7 +518,6 @@ while ( !((r=='S')||(r=='N')) ){
         };
 return (r=='S'); /*Devuelve 1 si se ingresa 'S'*/
 };
-
 
 /** \brief Pausa el programa y solicita al usuario que ingrese una tecla para continuar
  * \return void
@@ -524,14 +553,6 @@ void esperar (int ms) {
 #else
     usleep(ms*1000);
 #endif
-};
-
-/** \brief Cambia el color de la consola
- * \return void
- */
-void noVeo (void){
- system("color 0F");
- //system("color F0");
 };
 
 /*Funciones de ordenamiento*/

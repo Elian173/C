@@ -44,7 +44,7 @@
 	<string.h>
 	<ctype.h>
 
-1557079318 source:f:\c\misfunciones\funcionesinput\funcionesinput.c
+1557122828 source:f:\c\misfunciones\funcionesinput\funcionesinput.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -54,7 +54,7 @@
 	<unistd.h>
 	<windows.h>
 
-1557022024 f:\c\misfunciones\funcionesinput\funcionesinput.h
+1557122878 f:\c\misfunciones\funcionesinput\funcionesinput.h
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>

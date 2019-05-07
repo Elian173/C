@@ -28,6 +28,10 @@ void f_i_PedirStringSoloFloat(char var_dondeAsignar[],int longitudMaxString ,cha
 
 void f_i_PedirStringAlfaNumerico(char var_dondeAsignar[],int longitudMaxString ,char mensaje[]);
 
+void f_i_PedirEmail (char var_dondeAsignar [] , int longitudMaxString , char mensaje [] );
+
+void f_i_PedirTelefono (char var_dondeAsignar[], int longitudMaxString , char mensaje[]);
+
 void f_i_PedirSexo(char * var_dondeAsignar , char mensaje[]);
 
 void f_i_PedirEdad (int * var_dondeAsignar ,char mensaje[]);

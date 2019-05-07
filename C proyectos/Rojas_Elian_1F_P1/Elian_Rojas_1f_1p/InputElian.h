@@ -4,6 +4,8 @@
 #include <string.h>
 #include <ctype.h>
 
+
+
 /*Funciones para obtener valores*/
 
 void f_i_PedirInt (int * var_dondeAsignar , char mensaje[]);
