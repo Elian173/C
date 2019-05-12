@@ -4,8 +4,6 @@
 #include <string.h>
 #include <ctype.h>
 
-
-
 /*Funciones para obtener valores*/
 
 void f_i_PedirInt (int * var_dondeAsignar , char mensaje[]);
@@ -38,7 +36,6 @@ void f_i_PedirTelefono (char var_dondeAsignar[], int longitudMaxString , char me
 
 void f_i_PedirEmail (char var_dondeAsignar [] , int longitudMaxString , char mensaje [] );
 
-
 int f_i_SioNo(char mensaje[]);
 
 void f_i_continuar(void);
@@ -65,6 +62,7 @@ void f_o_OrdernarArrayMenorAMayor (int var_dondeAsignar[],int cantidadElementos)
 
 void f_o_OrdenarArrayAlfabeticamente(int cantidadElementos,int longitudMaxString,
                        char var_dondeAsignar[cantidadElementos][longitudMaxString]);
+
 
 void f_o_ArreglarCaps (int cantidadElementos,int longitudMaxString,
                        char var_dondeAsignar[cantidadElementos][longitudMaxString]);

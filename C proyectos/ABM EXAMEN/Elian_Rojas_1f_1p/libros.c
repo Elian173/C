@@ -3,6 +3,7 @@
 #include <conio.h>
 #include <string.h>
 #include <ctype.h>
+
 #include "libros.h"
 #include "InputElian.h"
 
@@ -54,6 +55,8 @@ void hardCodeAutores(ESTRUCTURA_Autores lista[]){
 
 void hardCodeSocios (ESTRUCTURA_Socios lista[]){
 
+    int i;
+
     str_Fecha fecha = {1,4,2000};
 
     ESTRUCTURA_Socios ejemplo[]=
@@ -61,21 +64,51 @@ void hardCodeSocios (ESTRUCTURA_Socios lista[]){
 
 
         {1, "unoSocio", "aaa" ,'M', "11111111" ,"pepito@gmail.com",fecha,0},
-        {22, "dos", "kkkkkk",'M', "18001210" , "pepito@gmail.com",fecha,0},
-        {35, "tres", "jjj",'M', "324234342" , "pepito@gmail.com",fecha,0},
-        {42, "cuatro", "ppppp",'F' ,"32324342" , "pepito@gmail.com",fecha, 0},
-        {56, "cinco", "bbb" ,'M', "67555656" , "pepito@gmail.com",fecha, 0},
-        {1000, "seis", "ccc" ,'F'," 36663636" ,"pepito@gmail.com",fecha, 0},
-        {73, "siete", "iiiii" ,'M'," 2622262" , "pepito@gmail.com",fecha,0},
-        {99, "ocho", "wwww" ,'M', "262444445" ,"pepito@gmail.com",fecha, 0},
-        {980, "nueve", "kkkkkk" ,'M', "8798978905" ,"pepito@gmail.com",fecha, 0},
-        {21, "diez", "kkkkkk" ,'F', "456546545" , "pepito@gmail.com",fecha,0}
+        {2, "dos", "kkkkkk",'M', "18001210" , "pepito@gmail.com",fecha,0},
+        {3, "tres", "jjj",'M', "324234342" , "pepito@gmail.com",fecha,0},
+        {4, "cuatro", "ppppp",'F' ,"32324342" , "pepito@gmail.com",fecha, 0},
+        {5, "cinco", "bbb" ,'M', "67555656" , "pepito@gmail.com",fecha, 0},
+        {6, "seis", "ccc" ,'F'," 36663636" ,"pepito@gmail.com",fecha, 0},
+        {7, "siete", "iiiii" ,'M'," 2622262" , "pepito@gmail.com",fecha,0},
+        {8, "ocho", "wwww" ,'M', "262444445" ,"pepito@gmail.com",fecha, 0},
+        {9, "nueve", "kkkkkk" ,'M', "8798978905" ,"pepito@gmail.com",fecha, 0},
+        {10, "diez", "kkkkkk" ,'F', "456546545" , "pepito@gmail.com",fecha,0}
     };
 
-    for(int i=0; i < 10; i++)
+    for(i=0; i < 10; i++)
     {
         lista[i] = ejemplo[i];
     };
+
+}
+
+void hardCodePrestamos ( ESTRUCTURA_Prestamos lista[] ){
+
+    int i;
+
+    str_Fecha fecha = {1,4,2000};
+
+    ESTRUCTURA_Prestamos ejemplo[]=
+    {
+
+
+        {10,10, 10 , fecha ,0},
+        {9, 9, 9,fecha ,0},
+        {8, 8 , 8 , fecha,0},
+        {7,  7,  7, fecha,0},
+        {6, 6 , 6 , fecha,0},
+        {5, 5, 5 , fecha,0},
+        {4,  4, 4 , fecha,0},
+        {3, 3 ,3  , fecha,0},
+        {2,  2 ,2  , fecha,0},
+        {1, 1 , 1 , fecha,0},
+    };
+
+    for(i=0; i < 10; i++)
+    {
+        lista[i] = ejemplo[i];
+    };
+
 
 }
 
@@ -114,6 +147,56 @@ void mostrarAutores (ESTRUCTURA_Autores autor[] , int cantidadElementos) {
     return;
 }
 
+/** \brief Imprime una lista completa de todos libros que concuerden con la fecha dada
+ * \param prestamo[] es el array de prestamos
+ * \param cantidadElementos es la cantidad maxima de prestamos
+ * \param fecha es la fecha que se le pide al usuario
+ * \param libro es el array de libros
+ * \return void
+ */
+void mostrarLibrosPorFechaPrestamo (ESTRUCTURA_Prestamos prestamo [],int cantidadElementos , str_Fecha fecha , ESTRUCTURA_Libros libro[]){
+
+    int i;
+    printf("LIBROS:\n");
+    printf("Codigo  Nombre:\n\n");
+
+        for(i=0;i<cantidadElementos;i++){
+
+            if (( prestamo[i].fechaPrestamo.dia == fecha.dia) && (prestamo[i].fechaPrestamo.mes == fecha.mes ) &&(prestamo[i].fechaPrestamo.anyo == fecha.anyo))
+                {
+
+                printf("%3d-     %-20.16s\n", libro[i].id,libro[i].nombre);
+        };
+        };
+
+};
+
+
+/** \brief Imprime una lista completa de todos libros que concuerden con la fecha dada
+ * \param prestamo[] es el array de prestamos
+ * \param cantidadElementos es la cantidad maxima de prestamos
+ * \param fecha es la fecha que se le pide al usuario
+ * \param libro es el array de libros
+ * \return void
+ */
+void mostrarSociosPorFecha (ESTRUCTURA_Prestamos prestamo [],int cantidadElementos , str_Fecha fecha , ESTRUCTURA_Socios socio[]){
+
+    int i;
+    printf("Socios:\n");
+    printf("Codigo  Nombre:\n\n");
+
+        for(i=0;i<cantidadElementos;i++){
+
+            if (( prestamo[i].fechaPrestamo.dia == fecha.dia) && (prestamo[i].fechaPrestamo.mes == fecha.mes ) &&(prestamo[i].fechaPrestamo.anyo == fecha.anyo))
+                {
+
+                printf("%3d-     %s%s\n", socio[i].id,socio[i].nombre,socio[i].apellido);
+        };
+        };
+
+};
+
+
 /** \brief Imprime una lista completa de todos los libros cargados , y sus autores
  * \param libro[] es el array de libros
   * \param autor[] es el array de autores
@@ -150,6 +233,43 @@ void mostrarLibros (ESTRUCTURA_Libros libro[] ,ESTRUCTURA_Autores autor[] , int 
 
     return;
 }
+/** \brief Imprime una lista completa de todos los libros alfabeticamente por burbujeo
+ * \param idLibro es el codigo de libro
+ * \param socios[] es el array de autores
+ * \param prestamos[] es el array de prestamos
+ * \param cantidadElementos es la cantidad maxima de prestamos
+ * \return void
+ */
+
+void mostrarLibrosBurbujeo(ESTRUCTURA_Libros libro[] , int cantidadElementos){
+
+    int j,i;
+    ESTRUCTURA_Libros aux;
+    int flagNoEstaOrdenado = 1;
+
+    while (flagNoEstaOrdenado==1)
+    {
+    flagNoEstaOrdenado = 0;
+        for (j = 1; j < cantidadElementos ; j++){
+
+            if ( strcmp( libro[j].nombre , libro[j-1].nombre)>0){
+                aux = libro[j];
+                libro[j] = libro[j-1];
+                libro[j-1] = aux;
+                flagNoEstaOrdenado = 1;
+            }
+        }
+    }
+
+    printf("LIBROS:\n");
+    printf("Codigo  Nombre:\n\n");
+
+        for(i=0;i<cantidadElementos;i++){
+
+            printf("%3d-     %-20.16s\n", libro[i].id,libro[i].nombre);
+
+        };
+};
 
 /** \brief Imprime una lista completa de todos los socios cargados
   * \param socio[] es el array de autores
@@ -203,6 +323,51 @@ void mostrarUnSocio (ESTRUCTURA_Socios socio[] , int id) {
 
 };
 
+/** \brief Imprime una lista completa de todos los socios cargados ordenados alfabeticamente por insercion
+ * \param socios[] es el array de autores
+ * \param cantidadElementos es la cantidad maxima de prestamos
+ * \return void
+ */
+ void mostrarSociosInsercion(ESTRUCTURA_Socios socio[],int cantidadElementos){
+
+    int i,j;
+    ESTRUCTURA_Socios temp;
+    char auxNombreSocio [90];
+
+    for(i=1 ; i<cantidadElementos ; i++) {
+
+        temp = socio[i];
+
+        j=i-1;
+
+        while(j>=0 && (strcmp (temp.apellido,socio[j].apellido) < 0) ){
+
+        socio[j+1] = socio[j];
+        j--;
+        }
+
+    socio[j+1]=temp;
+
+    }
+
+    printf("Codigo-Apellido y nombre:            -Sexo-Telefono:        -Email:\n\n");
+
+        for(i=0;i<cantidadElementos;i++){
+
+            if (socio[i].isEmpty == 0){
+
+                strcpy(auxNombreSocio , socio[i].apellido);
+                strcat(auxNombreSocio," ");
+                strcat(auxNombreSocio , socio[i].nombre);
+
+                printf("%4d - %-30.60s -%1c-%18.20s -%s\n", socio[i].id ,auxNombreSocio,socio[i].sexo,socio[i].telefono,socio[i].email);
+            };
+        };
+
+        return;
+};
+
+
 /** \brief Imprime una lista completa de todos los prestamos cargados
  * \param libros[] es el array de libros
  * \param socios[] es el array de autores
@@ -234,6 +399,70 @@ void mostrarPrestamos (ESTRUCTURA_Prestamos prestamos [] , int cantidadElementos
     return;
 
 };
+
+
+/** \brief Imprime una lista completa de todos los socios que pidieron determinado libro
+ * \param idLibro es el codigo de libro
+ * \param socios[] es el array de socios
+ * \param prestamos[] es el array de prestamos
+ * \param cantidadElementos es la cantidad maxima de prestamos
+ * \return void
+ */
+void listarSociosPorPrestamosLibro (ESTRUCTURA_Prestamos prestamos [] , int cantidadElementos , ESTRUCTURA_Socios socio [] , int idLibro){
+
+    int i=0;
+    char auxNombreSocio [90];
+
+    printf("\nEl libro codigo %d fue prestado a:\n",idLibro);
+
+    printf("Apellido y nombre:            -Sexo-Telefono:        -Email:\n\n");
+
+    for ( i = 0 ; i<cantidadElementos ; i++){
+
+        if (prestamos[i].idLibro == idLibro ){
+
+        strcpy(auxNombreSocio , socio[prestamos[i].idSocio].apellido);
+        strcat(auxNombreSocio," ");
+        strcat(auxNombreSocio , socio[prestamos[i].idSocio].nombre);
+
+        printf("%s - %1c - %18.20s -%s\n", auxNombreSocio ,socio[prestamos[i].idSocio].sexo,socio[prestamos[i].idSocio].telefono,socio[prestamos[i].idSocio].email);
+
+        };
+    };
+
+    return;
+
+};
+
+
+/** \brief Imprime una lista completa de todos los libros que pidieron determinado socio
+ * \param idsocio es el codigo de socio
+ * \param libro[] es el array de libros
+ * \param prestamos[] es el array de prestamos
+ * \param cantidadElementos es la cantidad maxima de prestamos
+ * \return void
+ */
+void listarLibrosPorPrestamodSocio (ESTRUCTURA_Prestamos prestamos[],int cantidadElementos ,ESTRUCTURA_Libros libro [] , int idSocio){
+
+    int i=0;
+
+    printf("\nLibros prestados al socio %d son:\n",idSocio);
+
+    printf("Libro :\n\n");
+
+    for ( i = 0 ; i<cantidadElementos ; i++){
+        if (prestamos[i].idSocio == idSocio ){
+
+        printf("%-30.60s\n", libro[i].nombre );
+
+        }
+    };
+
+    return;
+
+}
+
+
 
 //Funciones inicializacion//
 
@@ -548,11 +777,11 @@ void modificarSocio (ESTRUCTURA_Socios list [] , int id ){
     char auxSexo;
     char auxEmail[31];
     char auxTelef[16];
-    str_Fecha auxfecha;
 
 
-    f_i_PedirIntEntre(&opcion,1,5,"\n1-Modificar Nombre\n2-Modificar Apellido\n3-Modificar Sexo\n"
-                      "4-Modificar Telefono\n5-Modificar Email\n6-Modificar Fecha de asociado\n7-Salir\nOpcion : ");
+    f_i_PedirIntEntre(&opcion,1,6,"\n1-Modificar Nombre\n2-Modificar Apellido\n3-Modificar Sexo\n"
+                      "4-Modificar Telefono\n5-Modificar Email\n6-Salir\nOpcion : ");
+
 
     switch (opcion){
 
@@ -576,15 +805,9 @@ void modificarSocio (ESTRUCTURA_Socios list [] , int id ){
             strcpy(list[id].email,auxEmail);
             break;
 
-    case 6 :
+    case 7 :
 
-            f_i_PedirIntEntre(&auxfecha.dia , 1 , 31 , "\nIngrese el dia de ingreso del socio:");
-
-            f_i_PedirIntEntre(&auxfecha.mes , 1 , 12 , "\nIngrese el mes de ingreso del socio (1 al 12):");
-
-            f_i_PedirIntEntre(&auxfecha.anyo , 1900 , 2020 , "\nIngrese el anyo de ingreso del socio:");
-            list[id].fechaSocio = auxfecha;
-            break;
+        break;
     }
 
     printf("\n*Socio Modificado Correctamente*\n");
@@ -663,6 +886,11 @@ int cargarPrestamo ( ESTRUCTURA_Prestamos prestamos[] , int id , ESTRUCTURA_Libr
 
 //ORDEN//
 
+/** \brief ordena un array de socios por apellido
+ * \param socios[] es el array de autores
+ * \param cantidadElementos es la cantidad maxima de prestamos
+ * \return void
+ */
 void ordenarPorApellido(ESTRUCTURA_Socios socio[], int cantidadElementos){
 
     ESTRUCTURA_Socios aux;
@@ -694,4 +922,25 @@ void ordenarPorApellido(ESTRUCTURA_Socios socio[], int cantidadElementos){
 };
 
 
+/** \brief saca el total de prestamos cargados
+ * \param prestamos[] es el array de prestamos
+ * \param cantidadMaxElementos es la cantidad maxima de prestamos
+ * \return void
+ */
+void sacarTotalYPromedio (ESTRUCTURA_Prestamos prestamos[], int cantidadMaxPrestamos){
+
+    int i  , totalPrestamos = 0  ;
+
+    for (i=0 ; i< cantidadMaxPrestamos ; i++){
+        if (prestamos[i].isEmpty==0){
+            totalPrestamos ++ ;
+        };
+    };
+
+    printf("La cantidad total de prestamos es : %d",totalPrestamos);
+
+
+
+
+};
 

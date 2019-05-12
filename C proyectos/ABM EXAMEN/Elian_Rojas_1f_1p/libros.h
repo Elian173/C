@@ -1,3 +1,5 @@
+
+
 typedef struct{
     int dia;
     int mes;
@@ -37,7 +39,6 @@ typedef struct{
     int isEmpty;
 }ESTRUCTURA_Socios;
 
-
 //HARDCODE//
 
 void hardCodeLibros(ESTRUCTURA_Libros lista[]);
@@ -46,20 +47,30 @@ void hardCodeAutores(ESTRUCTURA_Autores lista[]);
 
 void hardCodeSocios (ESTRUCTURA_Socios lista[]);
 
-
+void hardCodePrestamos ( ESTRUCTURA_Prestamos lista[] );
 //FUNCIONES DE MOSTRAR//
 
 void mostrarAutores (ESTRUCTURA_Autores autor[] , int cantidadElementos) ;
 
 void mostrarLibros (ESTRUCTURA_Libros libro[] ,ESTRUCTURA_Autores autor[] , int cantidadElementos);
 
+void mostrarLibrosBurbujeo(ESTRUCTURA_Libros libro[] , int cantidadElementos);
+
+void mostrarLibrosPorFechaPrestamo (ESTRUCTURA_Prestamos prestamo [],int cantidadElementos , str_Fecha fecha , ESTRUCTURA_Libros libro[]);
+
 void mostrarTodosSocios (ESTRUCTURA_Socios socio[] , int cantidadElementos);
 
-void mostrarUnSocio (ESTRUCTURA_Socios socio[] , int id) ;
+void mostrarUnSocio (ESTRUCTURA_Socios socio[] , int id);
+
+void mostrarSociosPorFecha (ESTRUCTURA_Prestamos prestamo [],int cantidadElementos , str_Fecha fecha , ESTRUCTURA_Socios socio[]);
+
+void mostrarSociosInsercion(ESTRUCTURA_Socios socios[],int cantidadElementos);
 
 void mostrarPrestamos (ESTRUCTURA_Prestamos prestamos [] , int cantidadElementos, ESTRUCTURA_Socios socios[] , ESTRUCTURA_Libros libros[]) ;
 
+void listarSociosPorPrestamosLibro (ESTRUCTURA_Prestamos prestamos [] , int cantidadElementos , ESTRUCTURA_Socios socio [] , int idLibro);
 
+void listarLibrosPorPrestamodSocio (ESTRUCTURA_Prestamos prestamos[],int cantidadElementos ,ESTRUCTURA_Libros libro [],int idSocio);
 //FUNCIONES INICIALIZACION//
 
 void iniciarIncrementalSocios (ESTRUCTURA_Socios iniciando[],int cantidadElementos);
@@ -94,10 +105,13 @@ int contarSocios( ESTRUCTURA_Socios lista [] , int cantMAXelementos);
 
 void cargarSocio (ESTRUCTURA_Socios elSocio[] , int id);
 
-void modificarSocio (ESTRUCTURA_Socios elSocio[] , int id );
+void modificarSocio (ESTRUCTURA_Socios elSocio[],int id );
 
 int cargarPrestamo ( ESTRUCTURA_Prestamos prestamos[] , int id , ESTRUCTURA_Libros libros [] ,int cantidadDeLibros, ESTRUCTURA_Socios socios[],int cantidadDeSocios,ESTRUCTURA_Autores autores[]);
 
 //ORDEN//
 
 void ordenarPorApellido(ESTRUCTURA_Socios socio[], int cantidadElementos);
+
+void sacarTotalYPromedio (ESTRUCTURA_Prestamos prestamos[], int cantidadMaxPrestamos);
+
