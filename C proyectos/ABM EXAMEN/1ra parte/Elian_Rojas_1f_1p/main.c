@@ -7,7 +7,7 @@
 #include "InputElian.h"
 #define CANTIDADAUTORES 10
 #define CANTIDADLIBROS 10
-#define CANTIDADSOCIOS 100
+#define CANTIDADSOCIOS 1000
 #define CANTIDADPRESTAMOS 20
 
 
@@ -31,24 +31,24 @@ int main() {
 
     hardCodeAutores(autores);
     hardCodeLibros(libros);
-    hardCodeSocios(socios);
-    //hardCodePrestamos(prestamos);
+    //hardCodeSocios(socios);
 
     //MENU//
 
     do{
-        f_i_PedirIntEntre(&opcion , 1 , 19 , "**Menu**\n"
-                          "Ingrese 1 para dar de Alta un socio -\n"
-                          "Ingrese 2 para Modificar los datos de un socio -\n"
-                          "Ingrese 3 para dar de baja un socio -\n"
-                          "Ingrese 4 para listar los socios ordenados por Apellido y Nombre -\n"
-                          "Ingrese 5 para listar los libros cargados-\n"
-                          "Ingrese 6 para listar los autores cargados-\n"
-                          "Ingrese 7 para dar de alta un prestamo-\n"
-                          "Ingrese 8 para ver los prestamos-\n"
-                          "\nIngrese 9 para Salir -\n");
+        f_i_PedirIntEntre(&opcion , 1 , 9 , "**Menu**\n"
+                          "Ingrese 1 para dar de Alta un socio -\n\n"
+                          "Ingrese 2 para Modificar los datos de un socio -\n\n"
+                          "Ingrese 3 para dar de baja un socio -\n\n"
+                          "Ingrese 4 para listar los socios ordenados por Apellido y Nombre -\n\n"
+                          "Ingrese 5 para listar los libros cargados-\n\n"
+                          "Ingrese 6 para listar los autores cargados-\n\n"
+                          "Ingrese 7 para dar de alta un prestamo-\n\n"
+                          "Ingrese 8 para listar los prestamos cargados-\n\n"
+                          "Ingrese 9 para Salir -\n\n");
 
         switch (opcion){
+
         case 1:
             limpiar();
 
@@ -57,12 +57,15 @@ int main() {
             if ( auxId != -1 ){
                 cargarSocio(socios , auxId);
                 limpiar();
+            break;
+
             } else {
             printf("\nNo queda espacio\n");
             f_i_continuar();
             limpiar();
-            };
             break;
+
+            };
 
         case 2 :
             limpiar();
@@ -83,29 +86,33 @@ int main() {
                     seleccion = f_i_SioNo("\nEs este el Socio a modificar?\n");
 
                     if (seleccion == 1){
-
                         limpiar();
                         modificarSocio(socios , auxId);
                         f_i_continuar();
                         limpiar();
+                        break;
 
                     } else {
                     printf("\nNo se modifico el socio\n");
                     f_i_continuar();
                     limpiar();
+                    break;
+
                     }
                 } else {
                 printf("\nEse id no corresponde a ningun socio activo\n");
                 f_i_continuar();
                 limpiar();
+                break;
                 }
 
             } else {
                 printf("\nNo hay ningun socio cargado en el sistema\n");
                 f_i_continuar();
                 limpiar();
+                break;
+
             };
-            break;
 
         case 3:
                 limpiar();
@@ -212,7 +219,7 @@ int main() {
             break;
             };
 
-            case 8:
+        case 8:
                 limpiar();
                 flagVacio = estaTodoVacioPrestamos( prestamos , CANTIDADPRESTAMOS );
 
@@ -220,7 +227,7 @@ int main() {
                     mostrarPrestamos(  prestamos , CANTIDADPRESTAMOS , socios , libros );
                     f_i_continuar();
                     limpiar();
-                    break;
+                break;
 
                 } else {
                 printf("\nNo hay ningun prestamo cargado\n");
@@ -229,16 +236,18 @@ int main() {
                 break;
                 }
 
-
-            case 9: limpiar();break;
-            default :
-                printf("Error");
+        case 9:
+                limpiar();
+                printf("Adios");
                 break;
 
+        default :
+                printf("Error");
+                break;
 
         }; //switch
 
     }while (opcion != 9); // do
 
     return 0;
-}
+};

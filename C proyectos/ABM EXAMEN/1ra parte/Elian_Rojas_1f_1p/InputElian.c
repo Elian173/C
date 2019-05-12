@@ -498,7 +498,6 @@ void f_i_PedirEmail (char var_dondeAsignar [] , int longitudMaxString , char men
     return;
 }
 
-
 /** \brief Solicita al usuario y valida que solo se ingrese 'S' o 'N' , arregla mayusculas automaticamente
  * \param mensaje Es el mensaje a ser mostrado
  * \return 1 si el usuario ingreso 'S' , 0 si el usuario ingreso 'N'

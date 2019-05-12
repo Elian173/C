@@ -26,7 +26,7 @@ void f_i_PedirInt (int * var_dondeAsignar , char mensaje[]){
     fflush(stdin);
     scanf("%d",var_dondeAsignar);
     return;
-};
+}
 
 /**\brief Solicita un número tipo flotante al usuario y lo asigna a la variable enviada
  * \param var_dondeAsignar es donde se guarda el valor
@@ -38,7 +38,7 @@ void f_i_PedirFloat (float * var_dondeAsignar , char mensaje[]){
     fflush(stdin);
     scanf("%f",var_dondeAsignar);
     return;
-};
+}
 
 /**\brief Solicita un caracter al usuario y lo asigna a la variable enviada
  * \param var_dondeAsignar es donde se guarda el valor
@@ -50,7 +50,7 @@ void f_i_PedirChar (char * var_dondeAsignar , char mensaje[]){
     fflush(stdin);
     scanf(" %c",var_dondeAsignar);
     return;
-};
+}
 
 /**\brief Solicita un string al usuario , elimina saltos de linea , y lo asigna a la variable enviada
  * \param mensaje Es el mensaje a ser mostrado
@@ -71,7 +71,7 @@ void f_i_PedirString(char var_dondeAsignar[], int longitudMaxString , char mensa
 
     strcpy(var_dondeAsignar,aux);
     return;
-};
+}
 
 /**\brief Solicita un número entero al usuario , valida que este dentro de 2 parametros y lo asigna a la variable enviada
  * \param var_dondeAsignar es donde se guarda el valor
@@ -97,7 +97,7 @@ void f_i_PedirIntEntre(int * var_dondeAsignar , int min , int max , char mensaje
     while (aux > max || aux < min);
     *var_dondeAsignar = aux;
     return;
-};
+}
 
 /*Funciones para obtener datos especificos*/
 
@@ -149,7 +149,7 @@ void f_i_PedirNombre(char var_dondeAsignar[],int longitudMaxString , char mensaj
 
     strcpy(var_dondeAsignar, auxiliar);
     return;
-};
+}
 
 /** \brief Solicita un texto al usuario , valida que sea solo numeros,elimina saltos de linea
  * \param var_dondeAsignar es donde se guarda el valor
@@ -193,7 +193,7 @@ void f_i_PedirStringSoloNumeros(char var_dondeAsignar[],int longitudMaxString ,c
     };
     strcpy(var_dondeAsignar,auxiliar);
     return;
-};
+}
 
 /** \brief Solicita un texto al usuario , valida que sea solo letras,elimina saltos de linea
  * \param var_dondeAsignar es donde se guarda el valor
@@ -311,7 +311,7 @@ void f_i_PedirStringAlfaNumerico(char var_dondeAsignar[],int longitudMaxString ,
 
     strcpy(var_dondeAsignar,aux);
     return;
-};
+}
 
 /** \brief Solicita un caracter al usuario , valida que sea solo pueda ingresar 'F' o 'M' , arregla las mayusculas automaticamente
  * \param var_dondeAsignar es donde se guarda el valor
@@ -333,7 +333,7 @@ while ( !((r=='F')||(r=='M')) ){
     *var_dondeAsignar=r;
     fflush(stdin);
 return;
-};
+}
 
 /** \brief Solicita un entero al usuario , valida que sea entre 0 y 99
  * \param var_dondeAsignar es donde se guarda el valor
@@ -415,7 +415,7 @@ void f_i_PedirTelefono (char var_dondeAsignar[], int longitudMaxString , char me
     strcpy(var_dondeAsignar,auxiliar);
 
     return;
-};
+}
 
 /** \brief Solicita un texto al usuario , valida que sea de formato e-mail, maximo UN punto y UN arroba ,permite numeros y "_"
  * elimina saltos de linea
@@ -518,7 +518,7 @@ while ( !((r=='S')||(r=='N')) ){
         printf("\n");
         };
 return (r=='S'); /*Devuelve 1 si se ingresa 'S'*/
-};
+}
 
 /** \brief Pausa el programa y solicita al usuario que ingrese una tecla para continuar
  * \return void
@@ -542,7 +542,7 @@ void limpiar (void) {
 #else
     system("clear");
 #endif
-};
+}
 
 /** \brief Hace un sleep
  * \param ms son milisegundos a esperar
@@ -554,7 +554,7 @@ void esperar (int ms) {
 #else
     usleep(ms*1000);
 #endif
-};
+}
 
 /*Funciones de ordenamiento*/
 
@@ -570,7 +570,7 @@ void f_o_IniciarArrayInt (int var_dondeAsignar[],int asignarleEsteNumero,int can
         var_dondeAsignar[i]= asignarleEsteNumero;
     };
 return;
-};
+}
 
 /**\brief Recibe un array de enteros y asigna valores a todos sus elementos de manera creciente de uno en uno (empezando desde 1)
  * \param var_dondeAsignar es donde se guarda el valor
@@ -585,7 +585,7 @@ void f_o_IniciarArrayIntIncremental(int var_dondeAsignar[],int cantidadElementos
 
     };
 return;
-};
+}
 
 /**\brief Recibe un array de enteros y devuelve el indice donde se encuentre la primera ocurrencia que se le asigne a la funcion
  * \param var_dondeAsignar es donde se busca el valor
@@ -606,7 +606,7 @@ int f_o_BuscarIndicePrimerOcurrencia (int var_dondeAsignar[],int cantidadElement
 
 };
     return -1;
-};
+}
 
 /**\brief Recibe un array de enteros lo ordena de mayor a menor
  * \param var_dondeAsignar es el array a ordenar
@@ -628,7 +628,7 @@ void f_o_OrdernarArrayMayorAMenor (int var_dondeAsignar[],int cantidadElementos)
 };
 };
 return;
-};
+}
 
 /**\brief Recibe un array de enteros lo ordena de menor a mayor
  * \param var_dondeAsignar es el array a ordenar
@@ -652,7 +652,7 @@ while ((j >= 0) && (tmp < var_dondeAsignar[j])){
 var_dondeAsignar[j + 1] = tmp;
 
 };
-};
+}
 
 /**\brief Recibe un array de strings y lo ordena alfabeticamente
  * \param cantidadElementos es la cantidad maxima de elementos que tiene el array var_dondeAsignar
@@ -679,7 +679,7 @@ void f_o_OrdenarArrayAlfabeticamente(int cantidadElementos,int longitudMaxString
 };
 };
 return;
-};
+}
 
 /**\brief Recibe un array de strings y deja cada palabra de cada elemento con la primera letra mayuscula y el resto minuscula
  * \param cantidadElementos es la cantidad maxima de elementos que tiene el array var_dondeAsignar
@@ -695,7 +695,7 @@ void f_o_ArreglarCaps (int cantidadElementos,int longitudMaxString,
     var_dondeAsignar[i][0]= toupper(var_dondeAsignar[i][0]);
 };
 return;
-};
+}
 
 
 

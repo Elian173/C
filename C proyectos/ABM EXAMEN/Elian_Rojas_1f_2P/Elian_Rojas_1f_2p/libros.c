@@ -29,7 +29,7 @@ void hardCodeLibros(ESTRUCTURA_Libros lista[]){
     {
         lista[i] = ejemplos[i];
     };
-};
+}
 
 void hardCodeAutores(ESTRUCTURA_Autores lista[]){
     int i;
@@ -169,7 +169,7 @@ void mostrarLibrosPorFechaPrestamo (ESTRUCTURA_Prestamos prestamo [],int cantida
         };
         };
 
-};
+}
 
 
 /** \brief Imprime una lista completa de todos libros que concuerden con la fecha dada
@@ -194,7 +194,7 @@ void mostrarSociosPorFecha (ESTRUCTURA_Prestamos prestamo [],int cantidadElement
         };
         };
 
-};
+}
 
 
 /** \brief Imprime una lista completa de todos los libros cargados , y sus autores
@@ -269,7 +269,7 @@ void mostrarLibrosBurbujeo(ESTRUCTURA_Libros libro[] , int cantidadElementos){
             printf("%3d-     %-20.16s\n", libro[i].id,libro[i].nombre);
 
         };
-};
+}
 
 /** \brief Imprime una lista completa de todos los socios cargados
   * \param socio[] es el array de autores
@@ -301,7 +301,7 @@ void mostrarTodosSocios (ESTRUCTURA_Socios socio[] , int cantidadElementos) {
 
     return;
 
-};
+}
 
 /** \brief Imprime los datos de un solo socio
  * \param socio[] es el socio a mostrar
@@ -321,7 +321,7 @@ void mostrarUnSocio (ESTRUCTURA_Socios socio[] , int id) {
 
     return;
 
-};
+}
 
 /** \brief Imprime una lista completa de todos los socios cargados ordenados alfabeticamente por insercion
  * \param socios[] es el array de autores
@@ -364,8 +364,8 @@ void mostrarUnSocio (ESTRUCTURA_Socios socio[] , int id) {
             };
         };
 
-        return;
-};
+    return;
+}
 
 
 /** \brief Imprime una lista completa de todos los prestamos cargados
@@ -398,7 +398,7 @@ void mostrarPrestamos (ESTRUCTURA_Prestamos prestamos [] , int cantidadElementos
 
     return;
 
-};
+}
 
 
 /** \brief Imprime una lista completa de todos los socios que pidieron determinado libro
@@ -432,7 +432,7 @@ void listarSociosPorPrestamosLibro (ESTRUCTURA_Prestamos prestamos [] , int cant
 
     return;
 
-};
+}
 
 
 /** \brief Imprime una lista completa de todos los libros que pidieron determinado socio
@@ -479,7 +479,7 @@ void iniciarIncrementalSocios (ESTRUCTURA_Socios iniciando[],int cantidadElement
 
     }
     return;
-};
+}
 
 /**\brief Recibe un array de prestamos y iguala sus codigos a un valor incremental
  * \param iniciando[] es el array de prestamos
@@ -495,7 +495,7 @@ void iniciarIncrementalPrestamos (ESTRUCTURA_Prestamos iniciando[],int cantidadE
     };
 
     return;
-};
+}
 
 /**\brief Recibe un array de socios y iguala sus elementos isEmpty a un valor = (numeroQueseAsigna)
  * \param iniciando[] es el array de socios
@@ -511,7 +511,7 @@ void iniciarVacioSocios(ESTRUCTURA_Socios iniciando[],int cantidadElementos,int 
 
     };
     return;
-};
+}
 
 /**\brief Recibe un array de prestamos y iguala sus elementos isEmpty a un valor = (numeroQueseAsigna)
  * \param iniciando[] es el array de prestamos
@@ -528,7 +528,7 @@ void iniciarVacioPrestamos(ESTRUCTURA_Prestamos iniciando[],int cantidadElemento
     };
 
     return;
-};
+}
 
 
 //Funciones de busqueda//
@@ -555,7 +555,7 @@ int buscarPrimerIdVacioSocios (ESTRUCTURA_Socios aBuscar[],int cantidadElementos
 
     return -1;
 
-};
+}
 
 /**\brief Recibe un array de prestamos y busca el id del primer parametro con .isEmpty == (indicadorPrimerOcurrencia)
  * \param aBuscar[] es el array de prestamos
@@ -578,7 +578,7 @@ int buscarPrimerIdVaciosPrestamos(ESTRUCTURA_Prestamos aBuscar[],int cantidadEle
 
     return -1;
 
-};
+}
 
 /**\brief Recibe un array de socios y verifica si tiene datos cargados
  * \param list[] es el array de socios
@@ -600,7 +600,7 @@ int estaTodoVacioSocios(ESTRUCTURA_Socios list[] , int len){
 
     return 1;
 
-};
+}
 
 /**\brief Recibe un array de prestamos y verifica si tiene datos cargados
  * \param list[] es el array de prestamos
@@ -622,7 +622,7 @@ int estaTodoVacioPrestamos(ESTRUCTURA_Prestamos list[] , int len){
 
     return 1;
 
-};
+}
 
 /**\brief Recibe un array de socios y busca el id que se le pida , verifica que no este vacio y devuelve el indice
  * \param socio[] es el array de socios donde se busca el id
@@ -691,7 +691,7 @@ int buscarIdLibro( ESTRUCTURA_Libros libros[] ,int cantidadElementos ,int id) {
 
     return -1;
 
-};
+}
 
 /**\brief Recibe un array de socios y cuenta la cantidad que tienen parametro isEmpty == 0
  * \param lista[] es el array de socios
@@ -762,7 +762,7 @@ void cargarSocio (ESTRUCTURA_Socios elSocio[] , int id){
     f_i_continuar();
     fflush(stdin);
 
-};
+}
 
 /**\brief Recibe un array de socios y perdite modificar los parametros de un socio especifico en el id que se le indique
  * \param list[] es el array de socios
@@ -813,7 +813,7 @@ void modificarSocio (ESTRUCTURA_Socios list [] , int id ){
     printf("\n*Socio Modificado Correctamente*\n");
     return;
 
-    };
+    }
 
 /**\brief Recibe un array de prestamos , valida y carga  todos los datos de un prestamo en el id que se le indique
  * \param prestamos[] es el array de prestamos
@@ -881,7 +881,7 @@ int cargarPrestamo ( ESTRUCTURA_Prestamos prestamos[] , int id , ESTRUCTURA_Libr
 
         return 0;
 
-};
+}
 
 
 //ORDEN//
@@ -919,7 +919,7 @@ void ordenarPorApellido(ESTRUCTURA_Socios socio[], int cantidadElementos){
 
     return;
 
-};
+}
 
 
 /** \brief saca el total de prestamos cargados
@@ -942,5 +942,5 @@ void sacarTotalYPromedio (ESTRUCTURA_Prestamos prestamos[], int cantidadMaxPrest
 
 
 
-};
+}
 

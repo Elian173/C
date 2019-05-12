@@ -73,7 +73,7 @@
 	"libros.h"
 	"InputElian.h"
 
-1557275138 source:e:\c\c proyectos\rojas_elian_1f_p1\elian_rojas_1f_1p\inputelian.c
+1557255323 source:c:\users\elian\desktop\c-master\c proyectos\rojas_elian_1f_p1\elian_rojas_1f_1p\inputelian.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -83,25 +83,14 @@
 	<unistd.h>
 	<windows.h>
 
-1557275934 e:\c\c proyectos\rojas_elian_1f_p1\elian_rojas_1f_1p\inputelian.h
+1557255323 c:\users\elian\desktop\c-master\c proyectos\rojas_elian_1f_p1\elian_rojas_1f_1p\inputelian.h
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
 	<string.h>
 	<ctype.h>
 
-1557277296 source:e:\c\c proyectos\rojas_elian_1f_p1\elian_rojas_1f_1p\libros.c
-	<stdio.h>
-	<stdlib.h>
-	<conio.h>
-	<string.h>
-	<ctype.h>
-	"libros.h"
-	"InputElian.h"
-
-1557276672 e:\c\c proyectos\rojas_elian_1f_p1\elian_rojas_1f_1p\libros.h
-
-1557276672 source:e:\c\c proyectos\rojas_elian_1f_p1\elian_rojas_1f_1p\main.c
+1557255323 source:c:\users\elian\desktop\c-master\c proyectos\rojas_elian_1f_p1\elian_rojas_1f_1p\libros.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -110,35 +99,9 @@
 	"libros.h"
 	"InputElian.h"
 
-1557698162 source:f:\c\c proyectos\abm examen\elian_rojas_1f_2p\elian_rojas_1f_2p\inputelian.c
-	<stdio.h>
-	<stdlib.h>
-	<conio.h>
-	<string.h>
-	<ctype.h>
-	"InputElian.h"
-	<unistd.h>
-	<windows.h>
+1557255323 c:\users\elian\desktop\c-master\c proyectos\rojas_elian_1f_p1\elian_rojas_1f_1p\libros.h
 
-1557275934 f:\c\c proyectos\abm examen\elian_rojas_1f_2p\elian_rojas_1f_2p\inputelian.h
-	<stdio.h>
-	<stdlib.h>
-	<conio.h>
-	<string.h>
-	<ctype.h>
-
-1557277296 source:f:\c\c proyectos\abm examen\elian_rojas_1f_2p\elian_rojas_1f_2p\libros.c
-	<stdio.h>
-	<stdlib.h>
-	<conio.h>
-	<string.h>
-	<ctype.h>
-	"libros.h"
-	"InputElian.h"
-
-1557276672 f:\c\c proyectos\abm examen\elian_rojas_1f_2p\elian_rojas_1f_2p\libros.h
-
-1557697746 source:f:\c\c proyectos\abm examen\elian_rojas_1f_2p\elian_rojas_1f_2p\main.c
+1557255323 source:c:\users\elian\desktop\c-master\c proyectos\rojas_elian_1f_p1\elian_rojas_1f_1p\main.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
