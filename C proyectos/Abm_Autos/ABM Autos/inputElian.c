@@ -3,7 +3,7 @@
 #include <conio.h>
 #include <string.h>
 #include <ctype.h>
-#include "FuncionesInput.h"
+#include "inputElian.h"
 
 //#define __unix__
 #ifdef __unix__
@@ -310,6 +310,7 @@ void f_i_PedirStringSoloFloat(char var_dondeAsignar[],int longitudMaxString,char
  */
 void f_i_PedirStringAlfaNumerico(char var_dondeAsignar[],int longitudMaxString,char mensaje[])
 {
+
     char aux[longitudMaxString];
     int esAlfaNumerico = 1;
     int i = 0;
@@ -564,20 +565,22 @@ void f_i_PedirEdad (int * var_dondeAsignar,char mensaje[])
    * \param anyoEnQue Es el mensaje a ser mostrado para el anyo
  * \return void
  */
-void pedirFecha (int *dia , int* mes , int *anyo ,char diaEnQue[],char mesEnQue[],char anyoEnQue[]){
+void pedirFecha (int *dia, int* mes, int *anyo,char diaEnQue[],char mesEnQue[],char anyoEnQue[])
+{
 
     int aux;
 
     do
     {
-    aux=-1;
-    fflush(stdin);
-    printf("\nIngrese el dia en que %s:",diaEnQue);
-    scanf("%d" , &aux);
+        aux=-1;
+        fflush(stdin);
+        printf("\nIngrese el dia en que %s:",diaEnQue);
+        scanf("%d", &aux);
 
-    if (aux > 31 || aux < 1) {
-    printf("\n**Error, dia invalido**");
-    };
+        if (aux > 31 || aux < 1)
+        {
+            printf("\n**Error, dia invalido**");
+        };
 
     }
     while (aux > 31 || aux < 1);
@@ -586,14 +589,15 @@ void pedirFecha (int *dia , int* mes , int *anyo ,char diaEnQue[],char mesEnQue[
 
     do
     {
-    aux=-1;
-    fflush(stdin);
-    printf("\nIngrese el mes en que %s (1 al 12):",mesEnQue);
-    scanf("%d" , &aux);
+        aux=-1;
+        fflush(stdin);
+        printf("\nIngrese el mes en que %s (1 al 12):",mesEnQue);
+        scanf("%d", &aux);
 
-    if (aux > 12 || aux < 1) {
-    printf("\n**Error, mes invalido**");
-    };
+        if (aux > 12 || aux < 1)
+        {
+            printf("\n**Error, mes invalido**");
+        };
     }
     while (aux > 12 || aux < 1);
 
@@ -601,14 +605,15 @@ void pedirFecha (int *dia , int* mes , int *anyo ,char diaEnQue[],char mesEnQue[
 
     do
     {
-    aux=-1;
-    fflush(stdin);
-    printf("\nIngrese el anyo en que %s:",anyoEnQue);
-    scanf("%d" , &aux);
+        aux=-1;
+        fflush(stdin);
+        printf("\nIngrese el anyo en que %s:",anyoEnQue);
+        scanf("%d", &aux);
 
-    if (aux > 2050 || aux < 1900) {
-    printf("\n**Error, anyo invalido**");
-    };
+        if (aux > 2050 || aux < 1900)
+        {
+            printf("\n**Error, anyo invalido**");
+        };
     }
     while (aux > 2050 || aux < 1900);
 
@@ -618,7 +623,6 @@ void pedirFecha (int *dia , int* mes , int *anyo ,char diaEnQue[],char mesEnQue[
 
     return ;
 }
-
 
 /** \brief Solicita al usuario y valida que solo se ingrese 'S' o 'N' , arregla mayusculas automaticamente
  * \param mensaje Es el mensaje a ser mostrado
@@ -846,4 +850,5 @@ void f_o_ArreglarCaps (int cantidadElementos,int longitudMaxString,
     };
     return;
 }
+
 

@@ -30,6 +30,7 @@ typedef struct
     int dia;
     int mes;
     int anyo;
+    int id;
 
 }str_Fecha;
 

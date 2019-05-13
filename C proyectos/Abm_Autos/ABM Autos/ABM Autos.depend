@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1557721592 source:f:\c\c proyectos\abm autos\autos.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<strings.h>
+	<ctype.h>
+	"Autos.h"
+
+1557719096 f:\c\c proyectos\abm autos\inputelian.h
+
+1557719096 source:f:\c\c proyectos\abm autos\inputelian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"inputElian.h"
+	<unistd.h>
+	<windows.h>
+
+1557721410 source:f:\c\c proyectos\abm autos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"Autos.h"
+	"inputElian.h"
+
+1557721592 f:\c\c proyectos\abm autos\autos.h
+	<stdio.h>
+	<stdlib.h>
+	"inputElian.h"
+

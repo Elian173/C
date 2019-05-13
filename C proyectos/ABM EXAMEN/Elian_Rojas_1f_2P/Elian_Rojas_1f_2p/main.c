@@ -1,3 +1,7 @@
+// *** ADDED BY HEADER FIXUP ***
+#include <locale>
+#include <string>
+// *** END ***
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
@@ -5,6 +9,7 @@
 #include <ctype.h>
 #include "libros.h"
 #include "InputElian.h"
+
 #define CANTIDADAUTORES 10
 #define CANTIDADLIBROS 10
 #define CANTIDADSOCIOS 100

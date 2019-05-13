@@ -1,9 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <conio.h>
-#include <string.h>
-#include <ctype.h>
-
 /*Funciones para obtener valores*/
 
 void f_i_PedirInt (int * var_dondeAsignar, char mensaje[]);
@@ -36,7 +30,7 @@ void f_i_PedirSexo(char * var_dondeAsignar, char mensaje[]);
 
 void f_i_PedirEdad (int * var_dondeAsignar,char mensaje[]);
 
-void pedirFecha (int *dia , int* mes , int *anyo ,char diaEnQue[],char mesEnQue[],char anyoEnQue[]);
+void pedirFecha (int *dia, int* mes, int *anyo,char diaEnQue[],char mesEnQue[],char anyoEnQue[]);
 
 int f_i_SioNo(char mensaje[]);
 
