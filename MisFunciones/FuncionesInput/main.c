@@ -6,8 +6,19 @@
 #include "FuncionesInput.h"
 #define LARGO 20
 
-int main(){
 
 
-    return 0;
+int main()
+{
+    char patente [10];
+
+    f_i_PedirPatenteVieja(patente,"Ingrese la patente del auto:");
+
+    printf("patente:%s",patente);
+
+    printf("pepe");
+
+    f_i_continuar();
+
+        return 0 ;
 }

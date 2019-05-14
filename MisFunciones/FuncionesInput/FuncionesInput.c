@@ -347,6 +347,85 @@ void f_i_PedirStringAlfaNumerico(char var_dondeAsignar[],int longitudMaxString,c
     return;
 }
 
+/** \brief Pide un string de formato patente AAA 123 y valida que se ingrese un dato valido.
+ * \param var_dondeAsignar es donde se guarda el valor
+ * \param longitudMaxString es la cantidad maxima de caracteres que puede ingresar el usuario
+ * \param mensaje Es el mensaje a ser mostrado
+ * \return void
+ */
+void f_i_PedirPatenteVieja(char var_DondeAsignar[], char mensaje[])
+{
+    char aux_Patente[10];
+    int i, len;
+    int taMal = 0;
+
+    do
+    {
+
+        if (taMal == 1 )
+        {
+            printf("\nIngrese una patente de este formato > \"AAA 123\"");
+        }
+
+        taMal=0;
+
+        printf("\n%s", mensaje);
+
+        fflush(stdin);
+
+        f_i_PedirStringAlfaNumerico( aux_Patente, 10,"");
+
+        strupr(aux_Patente);
+
+        len = (strlen(aux_Patente));
+
+        for (i=0 ; i<3 ; i++)
+        {
+            if( (aux_Patente[i] < 'A' || aux_Patente[i] > 'Z') )
+            {
+                taMal = 1;
+                break;
+            };
+        };
+
+        if (aux_Patente [3]!= ' ')
+        {
+            taMal = 1;
+        }
+
+        for (i=4 ; i<7 ; i++)
+        {
+            if( (aux_Patente[i] < '0' || aux_Patente[i] > '9') )
+            {
+
+                taMal = 1;
+
+                break;
+            };
+        };
+
+        if (len>7)
+        {
+            taMal = 1;
+        };
+
+    }
+    while (taMal == 1);
+
+
+
+    if(aux_Patente[len]=='\n');
+    {
+
+        aux_Patente[len]='\0';
+
+    };
+
+
+    strcpy(var_DondeAsignar, aux_Patente);
+    return ;
+
+}
 /** \brief Solicita un texto al usuario , valida que sea de formato e-mail, maximo UN punto y UN arroba ,permite numeros y "_"
  * elimina saltos de linea
  * \param var_dondeAsignar es donde se guarda el valor
@@ -564,20 +643,22 @@ void f_i_PedirEdad (int * var_dondeAsignar,char mensaje[])
    * \param anyoEnQue Es el mensaje a ser mostrado para el anyo
  * \return void
  */
-void pedirFecha (int *dia , int* mes , int *anyo ,char diaEnQue[],char mesEnQue[],char anyoEnQue[]){
+void pedirFecha (int *dia, int* mes, int *anyo,char diaEnQue[],char mesEnQue[],char anyoEnQue[])
+{
 
     int aux;
 
     do
     {
-    aux=-1;
-    fflush(stdin);
-    printf("\nIngrese el dia en que %s:",diaEnQue);
-    scanf("%d" , &aux);
+        aux=-1;
+        fflush(stdin);
+        printf("\nIngrese el dia en que %s:",diaEnQue);
+        scanf("%d", &aux);
 
-    if (aux > 31 || aux < 1) {
-    printf("\n**Error, dia invalido**");
-    };
+        if (aux > 31 || aux < 1)
+        {
+            printf("\n**Error, dia invalido**");
+        };
 
     }
     while (aux > 31 || aux < 1);
@@ -586,14 +667,15 @@ void pedirFecha (int *dia , int* mes , int *anyo ,char diaEnQue[],char mesEnQue[
 
     do
     {
-    aux=-1;
-    fflush(stdin);
-    printf("\nIngrese el mes en que %s (1 al 12):",mesEnQue);
-    scanf("%d" , &aux);
+        aux=-1;
+        fflush(stdin);
+        printf("\nIngrese el mes en que %s (1 al 12):",mesEnQue);
+        scanf("%d", &aux);
 
-    if (aux > 12 || aux < 1) {
-    printf("\n**Error, mes invalido**");
-    };
+        if (aux > 12 || aux < 1)
+        {
+            printf("\n**Error, mes invalido**");
+        };
     }
     while (aux > 12 || aux < 1);
 
@@ -601,14 +683,15 @@ void pedirFecha (int *dia , int* mes , int *anyo ,char diaEnQue[],char mesEnQue[
 
     do
     {
-    aux=-1;
-    fflush(stdin);
-    printf("\nIngrese el anyo en que %s:",anyoEnQue);
-    scanf("%d" , &aux);
+        aux=-1;
+        fflush(stdin);
+        printf("\nIngrese el anyo en que %s:",anyoEnQue);
+        scanf("%d", &aux);
 
-    if (aux > 2050 || aux < 1900) {
-    printf("\n**Error, anyo invalido**");
-    };
+        if (aux > 2050 || aux < 1900)
+        {
+            printf("\n**Error, anyo invalido**");
+        };
     }
     while (aux > 2050 || aux < 1900);
 
@@ -653,6 +736,24 @@ void f_i_continuar(void)
     getch();
     return;
 }
+
+/** \brief Limpia residuos en el standar input
+ * \return void
+ */
+void flushit (void)
+{
+    int oof;
+
+    do
+    {
+        oof = getchar();
+
+    }
+    while (oof != '\n' && oof != EOF);
+
+    return;
+}
+
 
 /*Funciones para otras funciones y general*/
 

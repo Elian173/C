@@ -47,7 +47,6 @@ typedef struct
 
 typedef struct
 {
-
     int id; // incremental
     char patente[10];// debe existir validar
     int idServicio;// debe existir validar
@@ -60,7 +59,7 @@ void hardcodearMarca (STR_Marca aCargar []);
 void hardcodearColor (STR_Color aCargar[]);
 void hardcodearServicio(STR_Servicio aCargar[]);
 void hardcodeAutos (STR_Auto aCargar[]);
-
+void hardcodeTrabajos (STR_Trabajo aCargar[]);
 
 
 void iniciarAutosIsEmpty (STR_Auto iniciando[],int cantidadElementos,int numeroQueSeAsigna);
@@ -85,4 +84,4 @@ void mostrarAutos (STR_Auto losAutos[], STR_Color colores[], STR_Marca marcas []
 void mostrarMarcas (STR_Marca marca[], int cantidadElementos);
 void mostrarColores (STR_Color color[], int cantidadElementos);
 void mostrarServicios (STR_Servicio servicio[], int cantidadElementos);
-void mostrarTrabajos (STR_Trabajo trabajos[],int cantidadTrabajos, STR_Auto autos[],STR_Servicio servicios[]);
+void mostrarTrabajos (STR_Trabajo trabajos[],int cantidadTrabajos, STR_Auto autos[],STR_Servicio servicios[], int cantidadServicios);

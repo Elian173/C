@@ -34,15 +34,15 @@ int main()
     inciarIncrementalIdAutos (autos, CANTIDADAUTOS);  // pongo los id del 0 al -> CANTIDADAUTOS de uno en uno
 
     iniciarTrabajosIsEmpty(trabajos,CANTIDADTRABAJOS,1);
-
+    inciarIncrementalIdTrabajos(trabajos,CANTIDADTRABAJOS);
 
 
     //Hardcode//
     hardcodearColor(colores);
     hardcodearMarca(marcas);
     hardcodearServicio(servicios);
-    //hardcodeAutos(autos);
-
+    hardcodeAutos(autos);
+    hardcodeTrabajos (trabajos);
     //Menu//
 
     do
@@ -67,7 +67,6 @@ int main()
 
         switch(seleccion)
         {
-
 
 
         case 'a':
@@ -121,7 +120,7 @@ int main()
 
         case 'i':
             limpiar();
-            mostrarTrabajos(trabajos,CANTIDADTRABAJOS,autos,servicios);
+            mostrarTrabajos(trabajos,CANTIDADTRABAJOS,autos,servicios,CANTIDADSERVICIOS);
             f_i_continuar();
             break;
 

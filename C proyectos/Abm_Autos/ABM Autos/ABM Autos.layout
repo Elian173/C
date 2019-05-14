@@ -2,29 +2,100 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="Autos.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="140" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="Autos.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="162" topLine="0" />
-		</Cursor>
-	</File>
 	<File name="inputElian.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="487" topLine="36" />
+			<Cursor1 position="2581" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2333" topLine="66" />
+			<Cursor1 position="911" topLine="21" />
 		</Cursor>
 	</File>
 	<File name="inputElian.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="164" topLine="0" />
+			<Cursor1 position="266" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Autos.c" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6414" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="12" />
+			<Collapse line="16" />
+			<Collapse line="28" />
+			<Collapse line="34" />
+			<Collapse line="38" />
+			<Collapse line="50" />
+			<Collapse line="57" />
+			<Collapse line="61" />
+			<Collapse line="72" />
+			<Collapse line="80" />
+			<Collapse line="84" />
+			<Collapse line="101" />
+			<Collapse line="107" />
+			<Collapse line="112" />
+			<Collapse line="127" />
+			<Collapse line="135" />
+			<Collapse line="138" />
+			<Collapse line="144" />
+			<Collapse line="148" />
+			<Collapse line="156" />
+			<Collapse line="160" />
+			<Collapse line="181" />
+			<Collapse line="191" />
+			<Collapse line="193" />
+			<Collapse line="204" />
+			<Collapse line="224" />
+			<Collapse line="227" />
+			<Collapse line="235" />
+			<Collapse line="327" />
+			<Collapse line="337" />
+			<Collapse line="339" />
+			<Collapse line="353" />
+			<Collapse line="355" />
+			<Collapse line="362" />
+			<Collapse line="408" />
+			<Collapse line="420" />
+			<Collapse line="422" />
+			<Collapse line="429" />
+			<Collapse line="439" />
+			<Collapse line="441" />
+			<Collapse line="452" />
+			<Collapse line="455" />
+			<Collapse line="461" />
+			<Collapse line="466" />
+			<Collapse line="482" />
+			<Collapse line="492" />
+			<Collapse line="494" />
+			<Collapse line="501" />
+			<Collapse line="512" />
+			<Collapse line="514" />
+			<Collapse line="523" />
+			<Collapse line="526" />
+			<Collapse line="557" />
+			<Collapse line="566" />
+			<Collapse line="568" />
+			<Collapse line="575" />
+			<Collapse line="587" />
+			<Collapse line="590" />
+			<Collapse line="603" />
+			<Collapse line="610" />
+			<Collapse line="618" />
+			<Collapse line="626" />
+			<Collapse line="634" />
+			<Collapse line="641" />
+			<Collapse line="650" />
+			<Collapse line="659" />
+			<Collapse line="661" />
+			<Collapse line="663" />
+			<Collapse line="672" />
+		</Folding>
+	</File>
+	<File name="Autos.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1097" topLine="33" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

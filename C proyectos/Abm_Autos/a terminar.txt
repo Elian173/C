@@ -1,16 +1,4 @@
-
- /** HACER UNA FUNCION PARA PEDIR Y VALIDAR PATENTE Y CAMBIARLA EN TODAS LA FUNCIONES DONDE PUSE f_i_PedirStringAlfanumerico para pedir la patente **/
-
-
-despues 
-
-1ro : no permitir cargar trabajos si no hay autos cargados .
-
-2do : no permitir dar de baja ni modificar autos si no hay autos cargados
- 
-3ro : listar los autos al momento de pedir la patente en la opcion " modificar auto " y "baja auto " (b , c)  y  al momento de dar de alta trabajo (h)
-
-4to : en la opcion "D" listar , falta ordenar por marca y patente antes de mostrar. ASI PERO CON LA DE AUTOS
+******* en la opcion "D" listar , falta ordenar por marca y patente antes de mostrar.ALGO ASI PERO CON LA DE AUTOS***********
 
 
 void ordenarPorApellido(ESTRUCTURA_Socios socio[], int cantidadElementos){
@@ -46,4 +34,4 @@ void ordenarPorApellido(ESTRUCTURA_Socios socio[], int cantidadElementos){
 
 
 
-5to : meter limpiar() por todos lados asi no queda tan choto;
+**************5to : meter limpiar() por todos lados asi no queda tan choto;***************

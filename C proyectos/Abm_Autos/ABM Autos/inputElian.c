@@ -310,7 +310,6 @@ void f_i_PedirStringSoloFloat(char var_dondeAsignar[],int longitudMaxString,char
  */
 void f_i_PedirStringAlfaNumerico(char var_dondeAsignar[],int longitudMaxString,char mensaje[])
 {
-
     char aux[longitudMaxString];
     int esAlfaNumerico = 1;
     int i = 0;
@@ -348,6 +347,85 @@ void f_i_PedirStringAlfaNumerico(char var_dondeAsignar[],int longitudMaxString,c
     return;
 }
 
+/** \brief Pide un string de formato patente AAA 123 y valida que se ingrese un dato valido.
+ * \param var_dondeAsignar es donde se guarda el valor
+ * \param longitudMaxString es la cantidad maxima de caracteres que puede ingresar el usuario
+ * \param mensaje Es el mensaje a ser mostrado
+ * \return void
+ */
+void f_i_PedirPatenteVieja(char var_DondeAsignar[], char mensaje[])
+{
+    char aux_Patente[10];
+    int i, len;
+    int taMal = 0;
+
+    do
+    {
+
+        if (taMal == 1 )
+        {
+            printf("\nIngrese una patente de este formato > \"AAA 123\"");
+        }
+
+        taMal=0;
+
+        printf("\n%s", mensaje);
+
+        fflush(stdin);
+
+        f_i_PedirStringAlfaNumerico( aux_Patente, 10,"");
+
+        strupr(aux_Patente);
+
+        len = (strlen(aux_Patente));
+
+        for (i=0 ; i<3 ; i++)
+        {
+            if( (aux_Patente[i] < 'A' || aux_Patente[i] > 'Z') )
+            {
+                taMal = 1;
+                break;
+            };
+        };
+
+        if (aux_Patente [3]!= ' ')
+        {
+            taMal = 1;
+        }
+
+        for (i=4 ; i<7 ; i++)
+        {
+            if( (aux_Patente[i] < '0' || aux_Patente[i] > '9') )
+            {
+
+                taMal = 1;
+
+                break;
+            };
+        };
+
+        if (len>7)
+        {
+            taMal = 1;
+        };
+
+    }
+    while (taMal == 1);
+
+
+
+    if(aux_Patente[len]=='\n');
+    {
+
+        aux_Patente[len]='\0';
+
+    };
+
+
+    strcpy(var_DondeAsignar, aux_Patente);
+    return ;
+
+}
 /** \brief Solicita un texto al usuario , valida que sea de formato e-mail, maximo UN punto y UN arroba ,permite numeros y "_"
  * elimina saltos de linea
  * \param var_dondeAsignar es donde se guarda el valor
@@ -624,6 +702,7 @@ void pedirFecha (int *dia, int* mes, int *anyo,char diaEnQue[],char mesEnQue[],c
     return ;
 }
 
+
 /** \brief Solicita al usuario y valida que solo se ingrese 'S' o 'N' , arregla mayusculas automaticamente
  * \param mensaje Es el mensaje a ser mostrado
  * \return 1 si el usuario ingreso 'S' , 0 si el usuario ingreso 'N'
@@ -657,6 +736,24 @@ void f_i_continuar(void)
     getch();
     return;
 }
+
+/** \brief Limpia residuos en el standar input
+ * \return void
+ */
+void flushit (void)
+{
+    int oof;
+
+    do
+    {
+        oof = getchar();
+
+    }
+    while (oof != '\n' && oof != EOF);
+
+    return;
+}
+
 
 /*Funciones para otras funciones y general*/
 
@@ -850,5 +947,4 @@ void f_o_ArreglarCaps (int cantidadElementos,int longitudMaxString,
     };
     return;
 }
-
 

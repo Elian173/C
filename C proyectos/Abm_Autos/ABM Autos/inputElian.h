@@ -1,3 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <string.h>
+#include <ctype.h>
+
 /*Funciones para obtener valores*/
 
 void f_i_PedirInt (int * var_dondeAsignar, char mensaje[]);
@@ -22,6 +28,8 @@ void f_i_PedirStringSoloFloat(char var_dondeAsignar[],int longitudMaxString,char
 
 void f_i_PedirStringAlfaNumerico(char var_dondeAsignar[],int longitudMaxString,char mensaje[]);
 
+void f_i_PedirPatenteVieja(char var_DondeAsignar[], char mensaje[]);
+
 void f_i_PedirEmail (char var_dondeAsignar [], int longitudMaxString, char mensaje [] );
 
 void f_i_PedirTelefono (char var_dondeAsignar[], int longitudMaxString, char mensaje[]);
@@ -30,11 +38,13 @@ void f_i_PedirSexo(char * var_dondeAsignar, char mensaje[]);
 
 void f_i_PedirEdad (int * var_dondeAsignar,char mensaje[]);
 
-void pedirFecha (int *dia, int* mes, int *anyo,char diaEnQue[],char mesEnQue[],char anyoEnQue[]);
+void pedirFecha (int *dia , int* mes , int *anyo ,char diaEnQue[],char mesEnQue[],char anyoEnQue[]);
 
 int f_i_SioNo(char mensaje[]);
 
 void f_i_continuar(void);
+
+void flushit (void);
 
 /*Funciones para otras funciones y general*/
 

@@ -28,6 +28,8 @@ void f_i_PedirStringSoloFloat(char var_dondeAsignar[],int longitudMaxString,char
 
 void f_i_PedirStringAlfaNumerico(char var_dondeAsignar[],int longitudMaxString,char mensaje[]);
 
+void f_i_PedirPatenteVieja(char var_DondeAsignar[], char mensaje[]);
+
 void f_i_PedirEmail (char var_dondeAsignar [], int longitudMaxString, char mensaje [] );
 
 void f_i_PedirTelefono (char var_dondeAsignar[], int longitudMaxString, char mensaje[]);
@@ -41,6 +43,8 @@ void pedirFecha (int *dia , int* mes , int *anyo ,char diaEnQue[],char mesEnQue[
 int f_i_SioNo(char mensaje[]);
 
 void f_i_continuar(void);
+
+void flushit (void);
 
 /*Funciones para otras funciones y general*/
 
