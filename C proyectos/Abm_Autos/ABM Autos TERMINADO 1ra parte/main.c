@@ -15,7 +15,6 @@
 
 int main()
 {
-
     //Variables//
 
     STR_Color colores[CANTIDADCOLORES];
@@ -28,6 +27,7 @@ int main()
     //-----
 
     char seleccion;
+
     ///////////
     //Iniciacion//
     iniciarAutosIsEmpty ( autos,CANTIDADAUTOS, 1);// 1 Significa que NO hay un auto cargado

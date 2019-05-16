@@ -1,0 +1,3 @@
+se puede hardcodear autores, libros
+ABM solo de socios y prestamos
+libros y autores solo LISTAR.

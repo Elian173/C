@@ -148,6 +148,7 @@ void inciarIncrementalIdAutos (STR_Auto iniciando[], int cantidadElementos)
     {
         iniciando[i].id = i;
     }
+
 }
 
 
@@ -627,7 +628,7 @@ void mostrarAutos (STR_Auto losAutos[], STR_Color colores[], STR_Marca marcas []
 
             printf("%10s - %10s - %10s - %4d\n", marcas[indexMarca].descripcion,losAutos[i].patente,
                    colores[indexColor].nombreColor, losAutos[i].modelo);
-            ;
+
         };
     }
 

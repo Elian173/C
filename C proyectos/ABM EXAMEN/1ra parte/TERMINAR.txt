@@ -1,3 +1,0 @@
-creo que anda todo 
-Dejar solo un "BREAK" por case del switch
-desactivar los hardcode

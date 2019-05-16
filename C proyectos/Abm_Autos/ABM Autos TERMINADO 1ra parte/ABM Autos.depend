@@ -74,3 +74,20 @@
 	"Autos.h"
 	"inputElian.h"
 
+1557820092 source:f:\c\c proyectos\abm_autos\abm autos terminado 1ra parte\inputelian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"inputElian.h"
+	<unistd.h>
+	<windows.h>
+
+1557820190 f:\c\c proyectos\abm_autos\abm autos terminado 1ra parte\inputelian.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
