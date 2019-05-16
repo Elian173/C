@@ -8,7 +8,6 @@
 
 //hardcode//
 
-
 void hardcodearMarca (STR_Marca aCargar [])
 {
 
@@ -557,7 +556,9 @@ void modificarAuto (STR_Auto losAutos[],int cantidadAutos)
 void mostrarAutos (STR_Auto losAutos[], STR_Color colores[], STR_Marca marcas [], int cantidadAutos)
 {
 
-    int i,invalido;
+    int i,j,invalido;
+    STR_Auto aux;
+    int indexMarca , indexColor;
 
     //Veo si hay autos cargados//
 
@@ -579,19 +580,53 @@ void mostrarAutos (STR_Auto losAutos[], STR_Color colores[], STR_Marca marcas []
     };
 
     //Si SI hay autos//
-    //Muestro los autos cargados//
+
+    //Ordeno los autos por marca, si la marca es igual , por patente//
+
+    for(i=0; i<cantidadAutos-1; i++){
+
+    for(j=i+1; j<cantidadAutos; j++)
+    {
+        if( losAutos[i].idMarca > losAutos[j].idMarca ){
+            aux = losAutos[j];
+            losAutos[j] = losAutos[i];
+            losAutos[i] = aux;
+        };
+
+        if ( losAutos[i].idMarca == losAutos[j].idMarca){
+
+            if( strcmp( losAutos[i].patente , losAutos[j].patente)>0 ){
+            aux = losAutos[j];
+            losAutos[j] = losAutos[i];
+            losAutos[i] = aux;
+            };
+        };
+    };
+    };
+    //Muestro los autos que estan cargados ( isEmpty != 1 ) y ordenados//
 
     printf("Autos:\n");
-    printf("Patente:         Marca:   Color:    Modelo:\n\n");
+    printf("Marca:        Patente:   Color:    Modelo:\n\n");
 
     for(i=0; i<cantidadAutos; i++)
     {
+        // busco los index de color y marca  , en base al id guardado en array losAutos//
+
+        for(j=0;j<cantidadAutos;j++){
+
+            if (losAutos[i].idMarca == marcas[j].id){
+                indexMarca = j;
+            };
+            if (losAutos[i].idColor == colores[j].id){
+                indexColor = j;
+            };
+        };
 
         if (losAutos[i].isEmpty != 1)
         {
 
-            printf("%10s - %10s - %10s - %4d\n",losAutos[i].patente, marcas[losAutos[i].idMarca - 1000].descripcion,
-                   colores[losAutos[i].idColor-5000].nombreColor, losAutos[i].modelo);
+            printf("%10s - %10s - %10s - %4d\n", marcas[indexMarca].descripcion,losAutos[i].patente,
+                   colores[indexColor].nombreColor, losAutos[i].modelo);
             ;
         };
     }

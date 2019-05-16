@@ -34,7 +34,7 @@
 	<stdlib.h>
 	"inputElian.h"
 
-1557825394 source:f:\c\c proyectos\abm_autos\abm autos\autos.c
+1557970776 source:f:\c\c proyectos\abm_autos\abm autos\autos.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -65,7 +65,7 @@
 	<unistd.h>
 	<windows.h>
 
-1557823648 source:f:\c\c proyectos\abm_autos\abm autos\main.c
+1557970844 source:f:\c\c proyectos\abm_autos\abm autos\main.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>

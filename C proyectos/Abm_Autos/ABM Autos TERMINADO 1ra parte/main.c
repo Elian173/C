@@ -124,6 +124,10 @@ int main()
             f_i_continuar();
             break;
 
+        case 'x':
+            limpiar();
+            break;
+
         default :
             limpiar();
             printf("**Opcion Invalida**\n");
@@ -131,7 +135,7 @@ int main()
             break;
         } //switch
     }
-    while (seleccion != 'X');    // do
+    while (seleccion != 'x');    // do
 
     printf("Chau");
 

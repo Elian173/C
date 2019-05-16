@@ -35,3 +35,4 @@ void ordenarPorApellido(ESTRUCTURA_Socios socio[], int cantidadElementos){
 
 
 **************5to : meter limpiar() por todos lados asi no queda tan choto;***************
+
