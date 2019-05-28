@@ -767,8 +767,8 @@ void esperar (int ms)
  */
 void noVeo (void)
 {
-    system("color 0F");
-//system("color F0");
+    //system("color 0F");
+    system("color F0");
 }
 
 /*Funciones de ordenamiento*/

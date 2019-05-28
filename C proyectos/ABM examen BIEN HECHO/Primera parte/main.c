@@ -17,6 +17,7 @@
 
 int main()
 {
+    noVeo();
     //Variables//
     STR_Autores autores[CANTIDADAUTORES];
     STR_Libros libros [CANTIDADLIBROS];

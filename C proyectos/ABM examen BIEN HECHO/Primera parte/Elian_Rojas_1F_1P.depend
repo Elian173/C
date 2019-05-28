@@ -39,3 +39,43 @@
 	"libros.h"
 	"inputElian.h"
 
+1557981712 source:f:\c\c proyectos\abm examen bien hecho\primera parte\inputelian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"inputElian.h"
+	<unistd.h>
+	<windows.h>
+
+1557973674 f:\c\c proyectos\abm examen bien hecho\primera parte\inputelian.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
+1557988248 source:f:\c\c proyectos\abm examen bien hecho\primera parte\libros.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<strings.h>
+	<ctype.h>
+	"libros.h"
+
+1557987870 f:\c\c proyectos\abm examen bien hecho\primera parte\libros.h
+	<stdio.h>
+	<stdlib.h>
+	"inputElian.h"
+
+1558071266 source:f:\c\c proyectos\abm examen bien hecho\primera parte\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"libros.h"
+	"inputElian.h"
+

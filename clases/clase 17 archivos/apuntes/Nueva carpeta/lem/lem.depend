@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1558487324 source:e:\c\clases\clase 17 archivos\apuntes\nueva carpeta\lem\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+

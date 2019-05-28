@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1558396598 source:e:\c\clases\clase 16 memoria\clase 16\apunte.c
+	<stdio.h>
+	<stdlib.h>
+
+1558394218 source:e:\c\clases\clase 16 memoria\clase 16\main.c
+	<stdio.h>
+	<stdlib.h>
+
