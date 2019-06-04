@@ -94,3 +94,28 @@
 	<ctype.h>
 	"FuncionesInput.h"
 
+1557993626 source:e:\c\c proyectos\misfunciones\funcionesinput\funcionesinput.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"FuncionesInput.h"
+	<unistd.h>
+	<windows.h>
+
+1557993626 e:\c\c proyectos\misfunciones\funcionesinput\funcionesinput.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
+1557993650 source:e:\c\c proyectos\misfunciones\funcionesinput\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"FuncionesInput.h"
+

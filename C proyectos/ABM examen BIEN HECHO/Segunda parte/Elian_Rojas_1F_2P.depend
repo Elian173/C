@@ -136,7 +136,7 @@
 	<string.h>
 	<ctype.h>
 
-1558395626 source:e:\c\c proyectos\abm examen bien hecho\segunda parte\libros.c
+1558969234 source:e:\c\c proyectos\abm examen bien hecho\segunda parte\libros.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -145,12 +145,12 @@
 	<ctype.h>
 	"libros.h"
 
-1558363186 e:\c\c proyectos\abm examen bien hecho\segunda parte\libros.h
+1558968336 e:\c\c proyectos\abm examen bien hecho\segunda parte\libros.h
 	<stdio.h>
 	<stdlib.h>
 	"inputElian.h"
 
-1558483046 source:e:\c\c proyectos\abm examen bien hecho\segunda parte\main.c
+1558968552 source:e:\c\c proyectos\abm examen bien hecho\segunda parte\main.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>

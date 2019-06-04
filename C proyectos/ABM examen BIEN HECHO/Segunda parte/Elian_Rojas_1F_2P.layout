@@ -2,187 +2,14 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+	<File name="libros.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3333" topLine="0" />
+		</Cursor>
+	</File>
 	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1416" topLine="37" />
-		</Cursor>
-	</File>
-	<File name="libros.c" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="551" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="8" />
-			<Collapse line="16" />
-			<Collapse line="20" />
-			<Collapse line="28" />
-			<Collapse line="31" />
-			<Collapse line="39" />
-			<Collapse line="43" />
-			<Collapse line="53" />
-			<Collapse line="56" />
-			<Collapse line="66" />
-			<Collapse line="70" />
-			<Collapse line="72" />
-			<Collapse line="80" />
-			<Collapse line="84" />
-			<Collapse line="86" />
-			<Collapse line="95" />
-			<Collapse line="101" />
-			<Collapse line="103" />
-			<Collapse line="110" />
-			<Collapse line="119" />
-			<Collapse line="123" />
-			<Collapse line="125" />
-			<Collapse line="133" />
-			<Collapse line="137" />
-			<Collapse line="139" />
-			<Collapse line="148" />
-			<Collapse line="154" />
-			<Collapse line="156" />
-			<Collapse line="163" />
-			<Collapse line="174" />
-			<Collapse line="178" />
-			<Collapse line="180" />
-			<Collapse line="191" />
-			<Collapse line="196" />
-			<Collapse line="198" />
-			<Collapse line="208" />
-			<Collapse line="226" />
-			<Collapse line="235" />
-			<Collapse line="239" />
-			<Collapse line="252" />
-			<Collapse line="255" />
-			<Collapse line="269" />
-			<Collapse line="275" />
-			<Collapse line="278" />
-			<Collapse line="292" />
-			<Collapse line="298" />
-			<Collapse line="304" />
-			<Collapse line="319" />
-			<Collapse line="326" />
-			<Collapse line="335" />
-			<Collapse line="349" />
-			<Collapse line="359" />
-			<Collapse line="366" />
-			<Collapse line="368" />
-			<Collapse line="371" />
-			<Collapse line="378" />
-			<Collapse line="381" />
-			<Collapse line="390" />
-			<Collapse line="392" />
-			<Collapse line="408" />
-			<Collapse line="437" />
-			<Collapse line="440" />
-			<Collapse line="471" />
-			<Collapse line="474" />
-			<Collapse line="476" />
-			<Collapse line="490" />
-			<Collapse line="498" />
-			<Collapse line="506" />
-			<Collapse line="518" />
-			<Collapse line="526" />
-			<Collapse line="529" />
-			<Collapse line="531" />
-			<Collapse line="538" />
-			<Collapse line="541" />
-			<Collapse line="555" />
-			<Collapse line="557" />
-			<Collapse line="567" />
-			<Collapse line="577" />
-			<Collapse line="588" />
-			<Collapse line="602" />
-			<Collapse line="605" />
-			<Collapse line="613" />
-			<Collapse line="626" />
-			<Collapse line="650" />
-			<Collapse line="658" />
-			<Collapse line="660" />
-			<Collapse line="665" />
-			<Collapse line="667" />
-			<Collapse line="672" />
-			<Collapse line="676" />
-			<Collapse line="684" />
-			<Collapse line="704" />
-			<Collapse line="714" />
-			<Collapse line="733" />
-			<Collapse line="736" />
-			<Collapse line="741" />
-			<Collapse line="752" />
-			<Collapse line="761" />
-			<Collapse line="770" />
-			<Collapse line="789" />
-			<Collapse line="793" />
-			<Collapse line="798" />
-			<Collapse line="809" />
-			<Collapse line="820" />
-			<Collapse line="830" />
-			<Collapse line="845" />
-			<Collapse line="848" />
-			<Collapse line="858" />
-			<Collapse line="866" />
-			<Collapse line="875" />
-			<Collapse line="891" />
-			<Collapse line="897" />
-			<Collapse line="906" />
-			<Collapse line="919" />
-			<Collapse line="927" />
-			<Collapse line="934" />
-			<Collapse line="950" />
-			<Collapse line="953" />
-			<Collapse line="965" />
-			<Collapse line="972" />
-			<Collapse line="975" />
-			<Collapse line="978" />
-			<Collapse line="991" />
-			<Collapse line="1003" />
-			<Collapse line="1016" />
-			<Collapse line="1026" />
-			<Collapse line="1031" />
-			<Collapse line="1033" />
-			<Collapse line="1036" />
-			<Collapse line="1042" />
-			<Collapse line="1047" />
-			<Collapse line="1060" />
-			<Collapse line="1064" />
-			<Collapse line="1066" />
-			<Collapse line="1069" />
-			<Collapse line="1076" />
-			<Collapse line="1089" />
-			<Collapse line="1102" />
-			<Collapse line="1112" />
-			<Collapse line="1116" />
-			<Collapse line="1119" />
-			<Collapse line="1121" />
-			<Collapse line="1124" />
-			<Collapse line="1130" />
-			<Collapse line="1135" />
-			<Collapse line="1151" />
-			<Collapse line="1155" />
-			<Collapse line="1158" />
-			<Collapse line="1160" />
-			<Collapse line="1163" />
-			<Collapse line="1170" />
-			<Collapse line="1189" />
-			<Collapse line="1202" />
-			<Collapse line="1240" />
-			<Collapse line="1251" />
-			<Collapse line="1261" />
-			<Collapse line="1284" />
-			<Collapse line="1315" />
-			<Collapse line="1325" />
-			<Collapse line="1341" />
-			<Collapse line="1355" />
-			<Collapse line="1376" />
-			<Collapse line="1427" />
-			<Collapse line="1437" />
-			<Collapse line="1452" />
-			<Collapse line="1466" />
-		</Folding>
-	</File>
-	<File name="inputElian.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2624" topLine="0" />
+			<Cursor1 position="482" topLine="3" />
 		</Cursor>
 	</File>
 	<File name="inputElian.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -190,9 +17,14 @@
 			<Cursor1 position="1645" topLine="18" />
 		</Cursor>
 	</File>
-	<File name="libros.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="libros.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3333" topLine="0" />
+			<Cursor1 position="2924" topLine="114" />
+		</Cursor>
+	</File>
+	<File name="inputElian.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="12921" topLine="468" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

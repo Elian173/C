@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1559605050 source:e:\c\clases\clase 21\clase21\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
