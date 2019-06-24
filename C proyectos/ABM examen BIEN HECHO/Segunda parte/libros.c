@@ -6,10 +6,6 @@
 #include <ctype.h>
 #include "libros.h"
 
-/* cuento cantidad dias diferentes y divido el total por esa cantidad
-                      guardo el dia que estoy comparando en un auxiliar
-                      promedio diario de solicitudes no tomaria en cuenta que sea de otro año , solo que la fecha sea diferente.*/
-
 
 //*Inicializacion*//
 
@@ -24,6 +20,7 @@ void iniciarSociosIsEmpty ( STR_Socios iniciando[],int cantidadElementos,int num
 
     return;
 }
+
 
 void inciarIncrementalIdSocios (STR_Socios iniciando[], int cantidadElementos )
 {
@@ -148,7 +145,6 @@ int buscarIndexPorIdPrestamo (STR_Prestamos prestamo[],int cantidadPrestamos,int
 int hayPrestamos (STR_Prestamos prestamo [], int cantidadPrestamos)
 {
 
-    //Veo si hay socios cargados//
     int hayUnPrestamo = 0,i;
 
     for (i=0 ; i< cantidadPrestamos ; i++)
@@ -167,7 +163,6 @@ int hayPrestamos (STR_Prestamos prestamo [], int cantidadPrestamos)
 
     return 1;
 }
-
 
 
 
@@ -438,29 +433,6 @@ void listarLibros (STR_Autores autor[],int cantidadAutores,STR_Libros libro[], i
 {
 
 
-    /*STR_Libros temp;
-
-    //ordeno por titulo del libro metodo insercion//
-
-    for(i=1 ; i<cantidadLibros ; i++)
-    {
-
-        temp = libro[i];
-
-        j=i-1;
-
-        while(j>=0 && (strcmp (temp.nombre,libro[j].nombre) < 0) )
-        {
-
-            libro[j+1] = libro[j];
-            j--;
-        }
-
-        libro[j+1]=temp;
-
-    }
-    */
-
     //Muestro los libros//
 
     int i,j,indexAutor;
@@ -593,12 +565,9 @@ void listarPrestamos (STR_Prestamos prestamo[], int cantidadPrestamos,STR_Socios
     //Si SI hay , los listo
 
     ordenarPrestamosPorFecha(prestamo,cantidadPrestamos);
-    listarTotalYPromedio(prestamo,cantidadPrestamos);
 
-
-    printf("PRESTAMOS CARGADOS:\n");
+    printf("\nPRESTAMOS CARGADOS:\n");
     printf("Codigo Socio:                   Libro:                        Fecha:\n\n");
-
     for(i=0; i < cantidadPrestamos ; i++)
     {
 
@@ -646,7 +615,6 @@ void listarTotalYPromedio(STR_Prestamos prestamo[],int cantidadPrestamos)
 }
 
 
-
 void listarDiasPorDebajoPromedio(STR_Prestamos prestamo [], int cantidadPrestamos )
 {
     int   i = 0,j = 0, cantidadPorDebajo = 0,prestamosEseDia = 1 ;
@@ -689,14 +657,10 @@ void listarDiasPorDebajoPromedio(STR_Prestamos prestamo [], int cantidadPrestamo
     }
 
     //Busco y muestro los dias que no superan el promedio
-    listarTotalYPromedio(prestamo,cantidadPrestamos);
-    printf("\nCantidad de dias en los que no se supero el promedio de prestamos : %d",cantidadPorDebajo);
-
+    printf("Cantidad de dias en los que no se supero el promedio de prestamos: %d \n",cantidadPorDebajo);
     return;
 
 }
-
-
 
 
 
@@ -912,10 +876,6 @@ void listarSociosPorFechaPrestamo (STR_Prestamos prestamo [],int cantidadPrestam
 
 
 
-
-
-
-
 void listarSociosInsercion (STR_Socios socio[],int cantidadSocios)
 {
 
@@ -995,8 +955,6 @@ void listarLibrosBurbujeo(STR_Libros libro[], int cantidadLibros)
 
     };
 }
-
-
 
 
 
@@ -1181,9 +1139,6 @@ void listarSociosConMasPrestamos (STR_Prestamos*prestamo,int cantidadPrestamos,S
 
 
 
-
-
-
 //*Altas*//
 
 void altaSocio (STR_Socios socio [], int cantidadSocios)
@@ -1234,6 +1189,7 @@ void altaSocio (STR_Socios socio [], int cantidadSocios)
     printf("\nSocio cargado correctamente\n");
 
     fflush(stdin);
+    return;
 }
 
 

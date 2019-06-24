@@ -15,8 +15,7 @@
 
 //REMEMBER //
 //sacar hardcodes
-//sacar prueba variable y case prueba
-// libros 612 no se muestran los prestamos de los socios dados de baja  , el lugar sigue ocupado igual , deberia dar de baja el prestamo
+// libros 612 no se muestran los prestamos de los socios dados de baja  , el lugar sigue ocupado igual , deberia dar de baja el prestamo?
 
 int main()
 {
@@ -26,23 +25,21 @@ int main()
     STR_Libros libros [CANTIDADLIBROS];
     STR_Socios socios[CANTIDADSOCIOS];
     STR_Prestamos prestamos [CANTIDADPRESTAMOS];
-    int  prueba;
     char seleccion;
 
     //Inicializacion de prestamos y socios//
 
     iniciarSociosIsEmpty ( socios,CANTIDADSOCIOS, 1);// 1 Significa que NO hay un socio cargado
-    inciarIncrementalIdSocios (socios, CANTIDADSOCIOS);  // pongo los id del 0 al -> CANTIDADSOCIOS de uno en uno
+    inciarIncrementalIdSocios (socios, CANTIDADSOCIOS);  // pongo los id del 1 al -> CANTIDADSOCIOS de uno en uno
 
     iniciarPrestamosIsEmpty(prestamos,CANTIDADPRESTAMOS,1);// 1 Significa que NO hay un prestamo cargado
-    iniciarIncrementalIdPrestamos(prestamos,CANTIDADPRESTAMOS);// pongo los id del 0 al -> CANTIDADPRESTAMOS de uno en uno
+    iniciarIncrementalIdPrestamos(prestamos,CANTIDADPRESTAMOS);// pongo los id del 1 al -> CANTIDADPRESTAMOS de uno en uno
 
     //Hardcode//
     hardCodeAutores(autores);
     hardCodeLibros(libros);
     hardCodeSocios(socios);
     hardCodePrestamos(prestamos);
-
 
     //Menu//
     do
@@ -106,7 +103,8 @@ int main()
 
         case 'a':
             limpiar();
-            listarPrestamos(prestamos,CANTIDADPRESTAMOS,socios,CANTIDADSOCIOS,libros,CANTIDADLIBROS);
+            listarTotalYPromedio(prestamos,CANTIDADPRESTAMOS);
+            //listarPrestamos(prestamos,CANTIDADPRESTAMOS,socios,CANTIDADSOCIOS,libros,CANTIDADLIBROS);
             f_i_continuar();
             break;
 
@@ -177,8 +175,6 @@ int main()
 
     }
     while (seleccion != 'x');
-
-    printf("Chau");
     return 0;
 }
 

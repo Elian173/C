@@ -119,7 +119,7 @@
 	"libros.h"
 	"inputElian.h"
 
-1558349674 source:e:\c\c proyectos\abm examen bien hecho\segunda parte\inputelian.c
+1559936992 source:e:\c\c proyectos\abm examen bien hecho\segunda parte\inputelian.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -129,14 +129,14 @@
 	<unistd.h>
 	<windows.h>
 
-1557973674 e:\c\c proyectos\abm examen bien hecho\segunda parte\inputelian.h
+1559940004 e:\c\c proyectos\abm examen bien hecho\segunda parte\inputelian.h
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
 	<string.h>
 	<ctype.h>
 
-1558969234 source:e:\c\c proyectos\abm examen bien hecho\segunda parte\libros.c
+1560107846 source:e:\c\c proyectos\abm examen bien hecho\segunda parte\libros.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -145,12 +145,12 @@
 	<ctype.h>
 	"libros.h"
 
-1558968336 e:\c\c proyectos\abm examen bien hecho\segunda parte\libros.h
+1560769870 e:\c\c proyectos\abm examen bien hecho\segunda parte\libros.h
 	<stdio.h>
 	<stdlib.h>
 	"inputElian.h"
 
-1558968552 source:e:\c\c proyectos\abm examen bien hecho\segunda parte\main.c
+1560108018 source:e:\c\c proyectos\abm examen bien hecho\segunda parte\main.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>

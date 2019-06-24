@@ -1,0 +1,74 @@
+# depslib dependency file v1.0
+1559692746 source:e:\c\clases\clase 21\clase21\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"people.h"
+	"inputs.h"
+
+1559688638 source:c:\users\alumno\desktop\c-master\clases\clase 21\clase21\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1559692172 source:c:\users\alumno\desktop\c-master\clases\clase 21\clase21\people.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"people.h"
+
+1559691894 source:c:\users\alumno\desktop\c-master\clases\clase 21\clase21\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"people.h"
+	"inputs.h"
+
+1559691894 c:\users\alumno\desktop\c-master\clases\clase 21\clase21\people.h
+
+1559688599 c:\users\alumno\desktop\c-master\clases\clase 21\clase21\inputs.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1559688640 source:e:\c\clases\clase 21\clase21\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1559691896 e:\c\clases\clase 21\clase21\people.h
+
+1559688600 e:\c\clases\clase 21\clase21\inputs.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1559692866 source:e:\c\clases\clase 21\clase21\people.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"people.h"
+
+1559688640 source:e:\c\clases\clase 21\clase21 - parte dous\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
