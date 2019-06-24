@@ -3,19 +3,22 @@
 #include <stdlib.h>
 int main(void){
 
-int x, vector[10];
+    char matriz[20];
 
-for(x=0; x<=10; x++){
+  /*  scanf("%s",matriz);
 
-vector[x] = 23;
+    printf("%s",matriz);*/
 
-}
+    gets(matriz);
 
- for(x=0; x<=10; x++){
+    printf("%s",matriz);
 
- printf("%d\n",vector[x]);
-
- }
+    char letra1 = 'A';
+char letra2 = 'B';
+char *p = &letra1;
+letra1 = 'C';
+letra2 = *p;
+printf("%c",letra2);
 
 
  return 0;
