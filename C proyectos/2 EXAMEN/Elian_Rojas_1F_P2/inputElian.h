@@ -1,8 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <conio.h>
-#include <string.h>
-#include <ctype.h>
+#ifndef input_H_INCLUDED
+#define input_H_INCLUDED
 
 /*Funciones para obtener valores*/
 /**\brief Solicita un número entero al usuario y lo asigna a la variable enviada
@@ -197,4 +194,21 @@ void f_o_OrdenarArrayAlfabeticamente(int cantidadElementos,int longitudMaxString
 void f_o_ArreglarCaps (int cantidadElementos,int longitudMaxString,
                        char var_dondeAsignar[cantidadElementos][longitudMaxString]);
 
+
+/**\brief Imprime un menu de opciones para la modificacion de un empleado
+ * \param
+ \return void**/
+void menuModificacion(void);
+
+/**\brief Imprime un menu de opciones para el orden de los empleados
+ * \param
+ \return void**/
+int menuOrden(void);
+
+/**\brief Imprime un menu de opciones para el orden de los empleados
+ * \param
+ \return void**/
+int menuCriterio (void);
+
+#endif
 

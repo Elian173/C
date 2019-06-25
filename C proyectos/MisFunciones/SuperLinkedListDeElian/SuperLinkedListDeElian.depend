@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1559610534 source:e:\c\c proyectos\superlinkedlistdeelian\main.c
-	<stdio.h>
-	<stdlib.h>
-	"SuperLinkedList.h"
-
-1559610810 e:\c\c proyectos\superlinkedlistdeelian\superlinkedlist.h
-

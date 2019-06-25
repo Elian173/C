@@ -358,7 +358,7 @@ void ordenarPrestamosPorFecha (STR_Prestamos * prestamo, int cantidadPrestamos)
     //para eso ordeno los prestamos en base a las fechas , por año , mes , y dia//
     int i, j ;
     STR_Prestamos prestamoAUX;
-    for(i=0; i<cantidadPrestamos; i++)
+    for(i=0; i<cantidadPrestamos-1; i++)
     {
         for(j = i + 1; j<cantidadPrestamos; j++)
         {
@@ -1070,31 +1070,32 @@ void listarSociosConMasPrestamos (STR_Prestamos*prestamo,int cantidadPrestamos,S
     for (i = 0 ; i < cantidadSocios ; i++)
     {
 
-    cuantasVecesPidioPrestamo=0;
+        cuantasVecesPidioPrestamo=0;
 
-    if (socio[i].isEmpty==0){
-
-        for (j=0; j < cantidadPrestamos ; j++)
+        if (socio[i].isEmpty==0)
         {
-            if (prestamo[j].isEmpty==0)
-            {
 
-                if(prestamo[j].idSocio == socio[i].id)
+            for (j=0; j < cantidadPrestamos ; j++)
+            {
+                if (prestamo[j].isEmpty==0)
                 {
-                    cuantasVecesPidioPrestamo ++;
+
+                    if(prestamo[j].idSocio == socio[i].id)
+                    {
+                        cuantasVecesPidioPrestamo ++;
+                    }
                 }
             }
-        }
-        if(i==0)
-        {
-            valorMasPrestamos = cuantasVecesPidioPrestamo;
-        }
+            if(i==0)
+            {
+                valorMasPrestamos = cuantasVecesPidioPrestamo;
+            }
 
-        if(valorMasPrestamos < cuantasVecesPidioPrestamo)
-        {
-            valorMasPrestamos = cuantasVecesPidioPrestamo;
+            if(valorMasPrestamos < cuantasVecesPidioPrestamo)
+            {
+                valorMasPrestamos = cuantasVecesPidioPrestamo;
+            }
         }
-    }
 
     }
 
@@ -1109,33 +1110,34 @@ void listarSociosConMasPrestamos (STR_Prestamos*prestamo,int cantidadPrestamos,S
     for (i = 0 ; i < cantidadSocios ; i++)
     {
 
-    cuantasVecesPidioPrestamo=0;
+        cuantasVecesPidioPrestamo=0;
 
-    if (socio[i].isEmpty==0){
-
-        for (j=0; j < cantidadPrestamos ; j++)
+        if (socio[i].isEmpty==0)
         {
-            if (prestamo[j].isEmpty==0)
-            {
 
-                if(prestamo[j].idSocio == socio[i].id)
+            for (j=0; j < cantidadPrestamos ; j++)
+            {
+                if (prestamo[j].isEmpty==0)
                 {
-                    cuantasVecesPidioPrestamo ++;
+
+                    if(prestamo[j].idSocio == socio[i].id)
+                    {
+                        cuantasVecesPidioPrestamo ++;
+                    }
                 }
             }
-        }
 
-        if(cuantasVecesPidioPrestamo == valorMasPrestamos)
-        {
-            printf("%4d      - %s %s\n",socio[i].id , socio[i].apellido , socio[i].nombre);
+            if(cuantasVecesPidioPrestamo == valorMasPrestamos)
+            {
+                printf("%4d      - %s %s\n",socio[i].id, socio[i].apellido, socio[i].nombre);
+            }
         }
-    }
 
     }
 
     return;
 
-    }
+}
 
 
 

@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1561421342 source:f:\elian_rojas_1f_p2\dominio.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"linkedList.h"
+	"dominio.h"
+
+1561422338 f:\elian_rojas_1f_p2\linkedlist.h
+
+1561422480 f:\elian_rojas_1f_p2\dominio.h
+
+1561421728 source:f:\elian_rojas_1f_p2\inputelian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"inputElian.h"
+	<unistd.h>
+	<windows.h>
+
+1561422478 source:f:\elian_rojas_1f_p2\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"linkedList.h"
+
+1561423298 source:f:\elian_rojas_1f_p2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"filesDominio.h"
+	"inputElian.h"
+	"dominio.h"
+	"linkedList.h"
+
+1561422480 source:f:\elian_rojas_1f_p2\filesdominio.c
+	<stdio.h>
+	<stdlib.h>
+	"filesDominio.h"
+	"linkedList.h"
+	"dominio.h"
+	"string.h"
+	"inputElian.h"
+
+1561414794 f:\elian_rojas_1f_p2\filesdominio.h
+	"linkedList.h"
+
+1561416246 f:\elian_rojas_1f_p2\inputelian.h
+

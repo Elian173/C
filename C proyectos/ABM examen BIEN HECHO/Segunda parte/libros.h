@@ -163,7 +163,7 @@ int buscarIndexPorIdLibro(STR_Libros libro[],int cantidadLibros,int id);
  * \param "prestamo" es el array de prestamos
  * \return void
  */
-void ordenarPrestamosPorFecha (STR_Prestamos * prestamo , int cantidadPrestamos);
+void ordenarPrestamosPorFecha (STR_Prestamos * prestamo, int cantidadPrestamos);
 
 //*Hardcode*//
 
@@ -262,7 +262,7 @@ void listarDiasPorDebajoPromedio(STR_Prestamos prestamos [], int cantidadPrestam
  * \return Si no hay prestamos cargados , lo informa por pantalla y vuelve al menu.
  */
 void listarPrestamosDeUnLibro(STR_Prestamos prestamo[],int cantidadPrestamos,STR_Socios socio[],int cantidadSocios,STR_Libros libro[],int cantidadLibros,
-                           STR_Autores autor[],int cantidadAutores);
+                              STR_Autores autor[],int cantidadAutores);
 
 /**\brief Lista todos los libros que fueron menos solicitados, e informa la cantidad de prestamos
     realizados a esos libros.
@@ -304,7 +304,7 @@ void listarPrestamosDeUnSocio(STR_Prestamos prestamo[],int cantidadPrestamos,STR
  * \param "cantidadlibros" es la cantidad de libros cargados.
  * \return Si no hay prestamos cargados , lo informa por pantalla y vuelve al menu.
  */
-void listarLibrosPorFechaPrestamo(STR_Prestamos prestamo [],int cantidadPrestamos , STR_Libros libro[],int cantidadLibros);
+void listarLibrosPorFechaPrestamo(STR_Prestamos prestamo [],int cantidadPrestamos, STR_Libros libro[],int cantidadLibros);
 
 /**\brief Pide al usuario que ingrese una fecha , lista todos los socios que realizaron prestamos
  en la fecha ingresada
@@ -314,7 +314,7 @@ void listarLibrosPorFechaPrestamo(STR_Prestamos prestamo [],int cantidadPrestamo
  * \param "cantidadSocios" es la cantidad total de socios.
  * \return Si no hay prestamos cargados , lo informa por pantalla y vuelve al menu.
  */
-void listarSociosPorFechaPrestamo (STR_Prestamos prestamo [],int cantidadPrestamos , STR_Socios socio[],int cantidadSocios);
+void listarSociosPorFechaPrestamo (STR_Prestamos prestamo [],int cantidadPrestamos, STR_Socios socio[],int cantidadSocios);
 
 
 /**\brief Ordena a los socios por apellido con el metodo de insercion y los lista por
@@ -331,7 +331,7 @@ void listarSociosInsercion (STR_Socios socio[],int cantidadSocios);
  * \param "cantidadLibros" es la cantidad total de libros cargados.
  * \return void
  */
-void listarLibrosBurbujeo(STR_Libros libro[] , int cantidadLibros);
+void listarLibrosBurbujeo(STR_Libros libro[], int cantidadLibros);
 
 
 //*Altas*//

@@ -1,0 +1,272 @@
+# depslib dependency file v1.0
+1560848337 source:c:\users\elian\desktop\linked_list_elian\files_elian.c
+	<stdio.h>
+	<stdlib.h>
+	"files_Elian.h"
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+	"string.h"
+	"input_Elian.h"
+
+1560846971 c:\users\elian\desktop\linked_list_elian\files_elian.h
+	"linkedList_Elian.h"
+
+1560847606 c:\users\elian\desktop\linked_list_elian\linkedlist_elian.h
+
+1560842307 c:\users\elian\desktop\linked_list_elian\objecta_elian.h
+
+1560763662 c:\users\elian\desktop\linked_list_elian\objectb_elian.h
+
+1560763662 c:\users\elian\desktop\linked_list_elian\objectc_elian.h
+
+1560847606 source:c:\users\elian\desktop\linked_list_elian\input_elian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"input_Elian.h"
+	<unistd.h>
+	<windows.h>
+
+1560847606 source:c:\users\elian\desktop\linked_list_elian\linkedlist_elian.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"linkedList_Elian.h"
+
+1560839345 source:c:\users\elian\desktop\linked_list_elian\objecta_elian.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+
+1560763814 source:c:\users\elian\desktop\linked_list_elian\objectb_elian.c
+	<stdio.h>
+	<stdlib.h>
+
+1560763814 source:c:\users\elian\desktop\linked_list_elian\objectc_elian.c
+	<stdio.h>
+	<stdlib.h>
+
+1560763814 source:c:\users\elian\desktop\linked_list_elian\sort_elian.c
+	<stdio.h>
+	<stdlib.h>
+
+1560848306 source:c:\users\elian\desktop\linked_list_elian\main.c
+	<stdio.h>
+	<stdlib.h>
+	"input_Elian.h"
+	"objectA_Elian.h"
+	"files_Elian.h"
+	"linkedList_Elian.h"
+	"controller_Elian.h"
+
+1560847606 c:\users\elian\desktop\linked_list_elian\input_elian.h
+
+1560848402 source:c:\users\elian\desktop\linked_list_elian\controller_elian.c
+	<stdio.h>
+	<stdlib.h>
+	"controller_Elian.h"
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+	"files_Elian.h"
+	"input_Elian.h"
+	"string.h"
+
+1560842442 c:\users\elian\desktop\linked_list_elian\controller_elian.h
+	<stdio.h>
+	<stdlib.h>
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+
+1560848404 source:f:\linked_list_elian\controller_elian.c
+	<stdio.h>
+	<stdlib.h>
+	"controller_Elian.h"
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+	"files_Elian.h"
+	"input_Elian.h"
+	"string.h"
+
+1560842444 f:\linked_list_elian\controller_elian.h
+	<stdio.h>
+	<stdlib.h>
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+
+1560847608 f:\linked_list_elian\linkedlist_elian.h
+
+1560899408 f:\linked_list_elian\objecta_elian.h
+
+1560846972 f:\linked_list_elian\files_elian.h
+	"linkedList_Elian.h"
+
+1560847608 f:\linked_list_elian\input_elian.h
+
+1560848338 source:f:\linked_list_elian\files_elian.c
+	<stdio.h>
+	<stdlib.h>
+	"files_Elian.h"
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+	"string.h"
+	"input_Elian.h"
+
+1560896402 source:f:\linked_list_elian\input_elian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"input_Elian.h"
+	<unistd.h>
+	<windows.h>
+
+1560904460 source:f:\linked_list_elian\linkedlist_elian.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"linkedList_Elian.h"
+
+1560896402 source:f:\linked_list_elian\objecta_elian.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+
+1560904786 source:f:\linked_list_elian\main.c
+	<stdio.h>
+	<stdlib.h>
+	"input_Elian.h"
+	"objectA_Elian.h"
+	"files_Elian.h"
+	"linkedList_Elian.h"
+	"controller_Elian.h"
+
+1560848404 source:e:\linked_list_elian\controller_elian.c
+	<stdio.h>
+	<stdlib.h>
+	"controller_Elian.h"
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+	"files_Elian.h"
+	"input_Elian.h"
+	"string.h"
+
+1560842444 e:\linked_list_elian\controller_elian.h
+	<stdio.h>
+	<stdlib.h>
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+
+1560847608 e:\linked_list_elian\linkedlist_elian.h
+
+1560905632 e:\linked_list_elian\objecta_elian.h
+
+1560846972 e:\linked_list_elian\files_elian.h
+	"linkedList_Elian.h"
+
+1560847608 e:\linked_list_elian\input_elian.h
+
+1560905040 source:e:\linked_list_elian\files_elian.c
+	<stdio.h>
+	<stdlib.h>
+	"files_Elian.h"
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+	"string.h"
+	"input_Elian.h"
+
+1560896402 source:e:\linked_list_elian\input_elian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"input_Elian.h"
+	<unistd.h>
+	<windows.h>
+
+1560904460 source:e:\linked_list_elian\linkedlist_elian.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"linkedList_Elian.h"
+
+1560896402 source:e:\linked_list_elian\objecta_elian.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+
+1560988464 source:e:\linked_list_elian\main.c
+	<stdio.h>
+	<stdlib.h>
+	"input_Elian.h"
+	"objectA_Elian.h"
+	"files_Elian.h"
+	"linkedList_Elian.h"
+	"controller_Elian.h"
+
+1560896402 source:e:\c\c proyectos\linked_list_elian\input_elian.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"input_Elian.h"
+	<unistd.h>
+	<windows.h>
+
+1560847608 e:\c\c proyectos\linked_list_elian\input_elian.h
+
+1560904460 source:e:\c\c proyectos\linked_list_elian\linkedlist_elian.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"linkedList_Elian.h"
+
+1560847608 e:\c\c proyectos\linked_list_elian\linkedlist_elian.h
+
+1560990038 source:e:\c\c proyectos\linked_list_elian\main.c
+	<stdio.h>
+	<stdlib.h>
+	"input_Elian.h"
+	"objectA_Elian.h"
+	"files_Elian.h"
+	"linkedList_Elian.h"
+	"controller_Elian.h"
+
+1560905632 e:\c\c proyectos\linked_list_elian\objecta_elian.h
+
+1560846972 e:\c\c proyectos\linked_list_elian\files_elian.h
+	"linkedList_Elian.h"
+
+1560842444 e:\c\c proyectos\linked_list_elian\controller_elian.h
+	<stdio.h>
+	<stdlib.h>
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+
+1560896402 source:e:\c\c proyectos\linked_list_elian\objecta_elian.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+
+1561426650 source:e:\c\c proyectos\linked_list_elian\controller_elian.c
+	<stdio.h>
+	<stdlib.h>
+	"controller_Elian.h"
+	"linkedList_Elian.h"
+	"objectA_Elian.h"
+	"files_Elian.h"
+	"input_Elian.h"
+	"string.h"
+

@@ -46,7 +46,7 @@ int main()
     {
         menu();
 
-    //Switch//
+        //Switch//
 
         fflush(stdin);
         seleccion = getchar();
